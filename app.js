@@ -1,11 +1,25 @@
 const express = require("express");
-const connectDB = require('./config/db')
+const mongoose = require('mongoose')
+const { mongodbURI } = require('./config/config')
+const routes = require('./routes/');
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-connectDB();
 
-app.listen(PORT, () => {
-  console.log(`server is running on port ${PORT}`);
-});
+app.use(express.json())
+app.use('/api', routes)
+
+
+mongoose.connect(mongodbURI)
+  .then(() => {
+    console.log("Connected to MongoDB");
+    app.listen(PORT, () => {
+      console.log(`Server is running on port ${PORT}`);
+    });
+  })
+  .catch((err) => {
+    console.error("Failed to connect to MongoDB", err);
+    process.exit(1);
+  });

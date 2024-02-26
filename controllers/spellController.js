@@ -1,6 +1,5 @@
 const Spell = require("../models/index");
-
-exports.addSpell = async (req, res) => {
+async function addSpell(req, res) {
   try {
     const {
       spellId,
@@ -41,9 +40,9 @@ exports.addSpell = async (req, res) => {
       .status(500)
       .json({ error: "An oops happened while trying to add the spell" });
   }
-};
+}
 
-exports.deleteSpell = async (req, res) => {
+async function deleteSpell(req, res) {
   try {
     const { name } = req.params;
     const deletedSpell = await Spell.findOneAndDelete({ name });
@@ -57,4 +56,9 @@ exports.deleteSpell = async (req, res) => {
     console.error("Could not delete spell", err);
     res.status(500).json({ error: "error when deleting spell" });
   }
-};
+}
+
+module.exports = {
+    addSpell,
+    deleteSpell
+}

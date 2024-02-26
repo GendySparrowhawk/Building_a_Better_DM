@@ -65,7 +65,7 @@ const spellSchema = new Schema({
     type: Boolean,
     required: true,
   },
-  save: {
+  save_throw: {
     DC: {
       type: Number,
       required: true,

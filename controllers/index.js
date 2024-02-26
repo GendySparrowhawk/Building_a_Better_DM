@@ -1,5 +1,3 @@
-const spellControllers = require('./spellController')
+const spellControllers = require("./spellController");
 
-module.exports = {
-    spellControllers
-}
+module.exports = spellControllers;
