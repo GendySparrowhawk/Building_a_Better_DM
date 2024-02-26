@@ -7,13 +7,16 @@ async function addSpell(req, res) {
       spellClass,
       lvl,
       school,
-      attack_type,
+      range,
+      castingTime,
+      duration,
       concentration,
       ritual,
-      save,
-      damage_type,
+      saveThrow,
+      damageType,
       componets,
       materials,
+      description,
     } = req.body;
 
     const newSpell = new Spell({
@@ -22,13 +25,16 @@ async function addSpell(req, res) {
       spellClass,
       lvl,
       school,
-      attack_type,
+      range,
+      castingTime,
+      duration,
       concentration,
       ritual,
-      save,
-      damage_type,
+      saveThrow,
+      damageType,
       componets,
       materials,
+      description,
     });
     await newSpell.save();
     res
@@ -59,6 +65,6 @@ async function deleteSpell(req, res) {
 }
 
 module.exports = {
-    addSpell,
-    deleteSpell
-}
+  addSpell,
+  deleteSpell,
+};
