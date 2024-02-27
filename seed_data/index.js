@@ -1,19 +1,21 @@
-const mongoose = require('mongoose')
-const spellData = require('./spell_data')
+const mongoose = require("mongoose");
+const spellData = require("./spell_data");
+const monsterData = require("./monster_data");
 
 mongoose.connect("mongodb://127.0.0.1:27017/fifth_edition");
 
 async function seedAllData() {
-    try {
-        await spellData.seedSpells()
-        console.log('spells seeded')
-        console.log('all data seeded')
-    } catch (err) {
-        console.error('error seeding data:', err)
-    } finally {
-        mongoose.disconnect()
-    }
+  try {
+    await spellData.seedSpells();
+    console.log("all spells seeded");
+    await monsterData.seedMonsters();
+    console.log("all monsters seeded");
+    console.log("all data seeded, yaay!");
+  } catch (err) {
+    console.error("error seeding data:", err);
+  } finally {
+    mongoose.disconnect();
+  }
 }
-
 
 seedAllData();

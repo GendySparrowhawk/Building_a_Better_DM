@@ -2,7 +2,6 @@ const Spell = require("../models/Spells");
 
 const spellData = [
   {
-    spellId: "1",
     name: "Abi-Dalzim's Horrid Wilting",
     spellClass: ["Sorcerer", "Wizard"],
     lvl: "8",
@@ -21,7 +20,6 @@ const spellData = [
   },
 
   {
-    spellId: "2",
     name: "Absorb Elements",
     spellClass: ["Artificer", "Wizard", "Druid", "Ranger", "Sorcerer"],
     lvl: "1",
@@ -40,7 +38,6 @@ const spellData = [
   },
 
   {
-    spellId: "3",
     name: "Acid Arrow",
     spellClass: ["Alchemist", "Wizard", "Druid"],
     lvl: "2",
@@ -58,7 +55,6 @@ const spellData = [
       "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 acid damage immediately and 2d4 acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage and no damage at the end of its next turn.At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage (both initial and later) increases by 1d4 for each slot level above 2nd.",
   },
   {
-    spellId: "4",
     name: "Acid Splash",
     spellClass: ["Sorcerer", "Wizard", "Artificer"],
     lvl: "cantrip",
@@ -76,7 +72,6 @@ const spellData = [
       "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 acid damage immediately and 2d4 acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage and no damage at the end of its next turn.At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage (both initial and later) increases by 1d4 for each slot level above 2nd.",
   },
   {
-    spellId: "5",
     name: "Aganazzar's Scorcher",
     spellClass: ["Sorcerer", "Wizard"],
     lvl: "2",
@@ -94,7 +89,6 @@ const spellData = [
       "A line of roaring flame 30 feet long and 5 feet wide emanates from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 3d8 fire damage on a failed save, or half as much damage on a successful one. At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.",
   },
   {
-    spellId: "6",
     name: "Aid",
     spellClass: ["Arificer", "Cleric", "Paladin"],
     lvl: "2",
@@ -112,7 +106,6 @@ const spellData = [
       "Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target\u2019s hit point maximum and current hit points increase by 5 for the duration. At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, a target\u2019s hit points increase by an additional 5 for each slot level above 2nd.",
   },
   {
-    spellId: "7",
     name: "Air Bubble",
     spellClass: ["Arificer", "Druid", "Ranger", "Wizard", "Sorcerer"],
     lvl: "2",
@@ -146,7 +139,8 @@ async function seedSpells() {
         await Spell.create(spell);
         console.log(`spell added: ${spell.name}`);
       } else {
-        console.log(`spell ${spell.name} already exists, skipping...`);
+        await Spell.findOneAndUpdate({ name: spell.name }, spell);
+        console.log(`${spell.name} updated.`)
       }
     }
   } catch (err) {

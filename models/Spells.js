@@ -2,11 +2,6 @@ const { Schema, model } = require("mongoose");
 
 // spell schema
 const spellSchema = new Schema({
-  spellId: {
-    type: String,
-    required: true,
-    unique: true,
-  },
   name: {
     type: String,
     required: true,

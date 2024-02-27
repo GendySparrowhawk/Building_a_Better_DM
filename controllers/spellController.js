@@ -2,7 +2,6 @@ const Spell = require("../models/index");
 async function addSpell(req, res) {
   try {
     const {
-      spellId,
       name,
       spellClass,
       lvl,
@@ -20,7 +19,6 @@ async function addSpell(req, res) {
     } = req.body;
 
     const newSpell = new Spell({
-      spellId,
       name,
       spellClass,
       lvl,
