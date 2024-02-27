@@ -5,6 +5,10 @@ const monsterSchema = new Schema({
     type: String,
     required: true,
   },
+  subClass: {
+    type: String,
+    required: true
+  },
   alignment: {
     type: String,
     required: true,
