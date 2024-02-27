@@ -1,19 +1,17 @@
 const { Schema, model } = require("mongoose");
-const fs = require('fs')
-const imageData = fs.readFileSync('../assets')
 
 const monsterSchema = new Schema({
   name: {
     type: String,
     required: true,
   },
+  img: {
+    type: String,
+    required: true,
+  },
   subClass: {
     type: String,
     required: true
-  },
-  img: {
-    type: Buffer,
-    contentType: String,
   },
   alignment: {
     type: String,
@@ -68,7 +66,6 @@ const monsterSchema = new Schema({
   ],
   saveThrows: {
     type: String,
-    required: true,
   },
   skills: {
     type: String,
@@ -101,6 +98,7 @@ const monsterSchema = new Schema({
 
   attacks: [
     {
+      name: String,
       toHit: String,
       damage: String,
       description: String,

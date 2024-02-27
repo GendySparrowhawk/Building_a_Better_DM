@@ -12,8 +12,6 @@ async function seedAllData() {
     console.log("all spells seeded");
     await monsterData.seedMonsters();
     console.log("all monsters seeded");
-    await weaponData.seedWeapons();
-    console.log('weapons seeded');
     console.log("all data seeded, yaay!");
   } catch (err) {
     console.error("error seeding data:", err);
