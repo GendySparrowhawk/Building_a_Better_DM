@@ -28,6 +28,7 @@ const monsterSchema = new Schema({
   speed: {
     type: String,
   },
+statBlock: {
   str: [
     {
       score: String,
@@ -64,6 +65,7 @@ const monsterSchema = new Schema({
       modifier: String,
     },
   ],
+},
   saveThrows: {
     type: String,
   },
