@@ -1,10 +1,26 @@
 const { Schema, model } = require("mongoose");
-
+const subraceSchema = new Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  traits: [{
+    name: {
+      type: String,
+      required: true
+    },
+    description: {
+      type: String,
+      required: true
+    },
+  }],
+})
 const racesSchema = new Schema({
   name: {
     type: String,
     required: true,
   },
+  subrace: [subraceSchema],
   size: {
     type: String,
     required: true,
@@ -34,9 +50,17 @@ const racesSchema = new Schema({
       },
     },
   ],
-  traits: {
-    type: String,
-  },
+  traits: [{
+    name: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+      required: true
+    }
+  }],
+
 });
 
 const Race = model("Race", racesSchema);
