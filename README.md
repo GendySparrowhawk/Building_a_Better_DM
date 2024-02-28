@@ -24,9 +24,11 @@ also how do you host an api? anybody got servcies they prefer to use for hosting
 
 ## Authors
 
-Jacob Hoefer - [![email](Jacob.hoefer@gmail.com)
+Jacob Hoefer - [email](Jacob.hoefer@gmail.com)
+
 open for colaborations and job offers. 
-[![LinkedIn](https://www.linkedin.com/in/jacob-hoefer-480198251/)
+
+[LinkedIn](https://www.linkedin.com/in/jacob-hoefer-480198251/)
 
 
 ## License
