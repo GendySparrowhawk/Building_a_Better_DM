@@ -13,6 +13,9 @@ const subraceSchema = new Schema({
       type: String,
       required: true
     },
+    action: {
+      type: Boolean,
+    }
   }],
 })
 const racesSchema = new Schema({
@@ -58,6 +61,9 @@ const racesSchema = new Schema({
     description: {
       type: String,
       required: true
+    },
+    action: {
+      type: Boolean,
     }
   }],
 

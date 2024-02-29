@@ -1,4 +1,18 @@
 const Spell = require("../models/index");
+
+async function findSpell(req, res) {
+  try {
+    const spellName = req.body;
+
+    await Spell.findOne(spellName === Spell.name)
+    res.send.json()
+  } catch (err) {
+    console.error("no spell found by that name", err);
+    res
+      .status(500)
+      .json({ error: "An oops happened while trying to find the spell" });
+  }
+}
 async function addSpell(req, res) {
   try {
     const {
