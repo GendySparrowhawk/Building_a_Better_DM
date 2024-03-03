@@ -479,6 +479,17 @@ const itemData = [
     weight: "13lb",
   },
   {
+    name: "Shield",
+    properties: ["Shield"],
+    armorType: "Shield",
+    description: "Styled any way you like, be it metal or wodden its still +2 to your AC unless you ask your DM.",
+    isArmor: true,
+    acBonus: "2",
+    dexBonus: "full",
+    rarity: "common",
+    weight: "6lb",
+  },
+  {
     name: "Hide",
     properties: [""],
     armorType: "Medium",
@@ -588,7 +599,122 @@ const itemData = [
     dexBonus: "0",
     rarity: "common",
     weight: "65lb",
-  }
+  },
+  {
+    name: "acid",
+    properties: ["Throwable", "Improvised Weapon"],
+    damage: "2d6",
+    damageType:"Acid",
+    range: "20/60",
+    description: "As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged Attack against a creature or object, treating the acid as an improvised weapon. On a hit, the target takes 2d6 acid damage.",
+    isItem: true,
+    rarity: "common",
+    weight: "1lb",
+  },
+  {
+    name: "Alchemist\u2019s Fire (flask)",
+    properties: ["Throwable", "Improvised Weapon"],
+    damage: "1d4",
+    damageType:"Fire",
+    range: "20/60",
+    description: "This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged Attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.",
+    isItem: true,
+    rarity: "common",
+    weight: "1lb",
+  },
+  {
+name: "Alchemist\u2019s Supplies",
+properties: ["Tools"],
+description: "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
+isItem: true,
+rarity: "common",
+weight: "8lb"
+  },
+  {
+    name: "Amulet",
+properties: ["Gear", "Spellcasting Focus"],
+description: "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic. Pantheons lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.",
+isItem: true,
+rarity: "common",
+weight: ".5lb"
+  },
+  {
+    name: "Amulet of Health",
+properties: ["Gear", "Wondrous", "Attunement"],
+description: "Your Constitution score is 19 while you wear this amulet. It has no effect on you if your Constitution score is already 19 or higher.",
+isItem: true,
+rarity: "rare",
+weight: ".5lb"
+  },
+  {
+    name: "Amulet of Proof against Detection and Location",
+properties: ["Gear", "Wondrous", "Attunement"],
+description: "While wearing this amulet, you are hidden from divination magic. You can't be targeted by such magic or perceived through magical scrying sensors.",
+isItem: true,
+rarity: "uncommon",
+weight: ".5lb"
+  },
+  {
+    name: "Amulet of the Planes",
+    properties: ["Gear", "Wondrous", "Attunement"],
+    description: "While wearing this amulet, you can use an action to name a location that you are familiar with on another plane of existence. Then make a DC 15 Intelligence check. On a successful check, you cast the plane shift spell. On a failure, you and each creature and object within 15 feet of you travel to a random destination. Roll a d100. On a 1-60, you travel to a random location on the plane you named. On a 61-100, you travel to a randomly determined plane of existence.",
+    isItem: true,
+    rarity: "very rare",
+    weight: ".5lb"
+  },
+  {
+    name: "Animated Shield",
+    properties: ["Gear", "Wondrous", "Attunement", "Shield"],
+    description: "While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free.",
+    isItem: true,
+    isArmor: true,
+    acBonus: "2",
+    rarity: "very rare",
+    weight: "6lb"
+  },
+  {
+name: "Antitoxin",
+properties: ["gear", "consumable"],
+description: "A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs.",
+isItem: true,
+rarity: "common",
+weight: "0"
+  },
+  {
+    name: "Armor of Invulnerability",
+    properties: ["Gear", "Wondrous", "Attunement", "stealth disadvantage", "req. STR 15"],
+    armorType: "Heavy",
+    description: "You have resistance to nonmagical damage while you wear this armor. Additionally, you can use an action to make yourself immune to nonmagical damage for 10 minutes or until you are no longer wearing the armor. Once this special action is used, it can't be used again until the next dawn.",
+    acBonus: "18",
+    dexBonus: "0",
+    rarity: "legendary",
+    weight: "65lb",
+  },
+  {
+    name: "Armor of Vulnerability",
+    properties: ["Gear", "Wondrous", "Attunement", "stealth disadvantage", "req. STR 15"],
+    armorType: "Heavy",
+    description: "While wearing this armor, you have resistance to one of the following damage types: bludgeoning, piercing, or slashing. The GM chooses the type or determines it randomly. Curse. This armor is cursed, a fact that is revealed only when an identify spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by the remove curse spell or similar magic; removing the armor fails to end the curse. While cursed, you have vulnerability to two of the three damage types associated with the armor (not the one to which it grants resistance).",
+    acBonus: "18",
+    dexBonus: "0",
+    rarity: "legendary",
+    weight: "65lb",
+  },
+  {
+    name: "Arrow of Slaying",
+    properties: ["ammunition", "gear"],
+    description: "An arrow of slaying is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both arrows of dragon slaying and arrows of blue dragon slaying. If a creature belonging to the type, race, or group associated with an arrow of slaying takes damage from the arrow, the creature must make a DC 17 Constitution saving throw, taking an extra 6d10 piercing damage on a failed save, or half as much extra damage on a successful one. Once an arrow of slaying deals its extra damage to a creature, it becomes a nonmagical arrow. Other types of magic ammunition of this kind exist, such as bolts of slaying meant for a crossbow, though arrows are most common.",
+    rarity: "very rare",
+    weight: ".05"
+  },
+  {
+    name: "Arrows",
+    properties: ["ammunition", "gear"],
+    description: "You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+    rarity: "common",
+    weight: ".05"
+  },
+  
 ];
 
 async function seedItems() {
