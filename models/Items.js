@@ -15,6 +15,9 @@ const itemSchema = new Schema({
   weaponType: {
     type: String,
   },
+  armorType: {
+    type: String,
+  },
   range: {
     type: String,
   },
@@ -31,6 +34,9 @@ const itemSchema = new Schema({
     type: Boolean,
   },
   acBonus: {
+    type: String,
+  },
+  dexBonus: {
     type: String,
   },
   rarity: {
