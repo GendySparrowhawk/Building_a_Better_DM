@@ -11,26 +11,10 @@ const abilitySchema = new Schema({
   },
   action: {
     type: Boolean,
-    required: true,
   },
-});
-const subClassAbilitySchema = new Schema({
-  lvl: {
-    type: Number,
-    requied: true,
-  },
-  name: {
-    type: String,
-    required: true,
-  },
-  description: {
-    type: String,
-    required: true,
-  },
-  action: {
+  passive: {
     type: Boolean,
-    required: true,
-  },
+  }
 });
 
 const spellSlotSchema = new Schema({
@@ -74,7 +58,10 @@ const subClassSchema = new Schema({
     type: String,
     required: true,
   },
-  abilities: [subClassAbilitySchema],
+  lvl: {
+    type: String,
+  },
+  abilities: [abilitySchema],
 });
 
 const classSchema = new Schema({

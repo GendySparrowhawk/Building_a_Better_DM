@@ -1,29 +1,47 @@
 const { Schema, model } = require("mongoose");
+
+
+const traitSchema = new Schema({
+  name: {
+    type: String,
+    required: true,
+  },
+  lvl: {
+    type: String,
+  },
+  description: {
+    type: String,
+    required: true,
+  },
+  action: {
+    type: Boolean,
+  },
+});
+
 const subraceSchema = new Schema({
   name: {
     type: String,
     required: true,
   },
-  traits: [{
-    name: {
-      type: String,
-      required: true
+  traits: [traitSchema],
+  abilityScoreIncrease: [
+    {
+      name: {
+        type: String,
+      },
+      amount: {
+        type: String,
+      },
     },
-    description: {
-      type: String,
-      required: true
-    },
-    action: {
-      type: Boolean,
-    }
-  }],
-})
+  ],
+});
+
 const racesSchema = new Schema({
   name: {
     type: String,
     required: true,
   },
-  subrace: [subraceSchema],
+  subraces: [subraceSchema],
   size: {
     type: String,
     required: true,
@@ -35,38 +53,19 @@ const racesSchema = new Schema({
   alignment: {
     type: String,
   },
-  languages: [
-    {
-      name: {
-        type: String,
-        require: true,
-      },
-    },
-  ],
-  abilityScore: {
-    type: String,
-  },
-  skills: [
+  languages: [String],
+  abilityScoreIncrease: [
     {
       name: {
         type: String,
       },
+      amount: {
+        type: String,
+      },
     },
   ],
-  traits: [{
-    name: {
-      type: String,
-      required: true,
-    },
-    description: {
-      type: String,
-      required: true
-    },
-    action: {
-      type: Boolean,
-    }
-  }],
-
+  proficiencies: [String],
+  traits: [traitSchema],
 });
 
 const Race = model("Race", racesSchema);
