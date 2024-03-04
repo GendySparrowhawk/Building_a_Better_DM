@@ -272,8 +272,73 @@ const dndClassData = [
       },
       {
         lvl: "13",
-        
-      }
+        abilities: [{
+          name: "Brutal Critical",
+          description: "Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack. This increases to two additional dice at 13th level and three additional dice at 17th level.",
+          isPassive: true,
+        }],
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "5/day",
+            bonus: {
+              name: "Rage Damage",
+              amount: "3",
+            },
+          }],
+          prof: "5" 
+      },
+      {
+        lvl: "14",
+        abilities: [],
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "5/day",
+            bonus: {
+              name: "Rage Damage",
+              amount: "3",
+            },
+          }],
+          prof: "5" 
+      },
+      {
+        lvl: "15",
+        abilities: [{
+          name: "Persistent Rage",
+          description: "Beginning at 15th level, your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it. ",
+          isPassive: true,
+        }],
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "5/day",
+            bonus: {
+              name: "Rage Damage",
+              amount: "3",
+            },
+          }],
+          prof: "5"
+      },
+      {
+        lvl: "16",
+        abilities: [{
+          name: "Ability Score Improvement",
+          description:
+            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can\u2019t increase an ability score above 20 using this feature. Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.",
+        },],
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "5/day",
+            bonus: {
+              name: "Rage Damage",
+              amount: "4",
+            },
+          }],
+          prof: "5"
+      },
+      
     ],
   },
 ];
