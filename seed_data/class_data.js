@@ -32,24 +32,247 @@ const dndClassData = [
           },
           {
             name: "Unarmored Defense",
-            description: "While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.",
+            description:
+              "While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.",
             isPassive: true,
           },
         ],
-        classFeature: [{
-          name: "Rage",
-          amount: "2/day",
-          bonus: {
-            name: "Rage Damage",
-            amount: "2"
-          }
-        }
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "2/day",
+            bonus: {
+              name: "Rage Damage",
+              amount: "2",
+            },
+          },
         ],
-        prof: "2"
+        prof: "2",
       },
       {
         lvl: "2",
-        abilities: []
+        abilities: [
+          {
+            name: "Reckless Attack",
+            description:
+              "Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.",
+            isAction: true,
+          },
+          {
+            name: "Danger Sense",
+            description:
+              "At 2nd level, you gain an uncanny sense of when things nearby aren\u2019t as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can\u2019t be blinded, deafened, or incapacitated.",
+            isPassive: true,
+          },
+        ],
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "2/day",
+            bonus: {
+              name: "Rage Damage",
+              amount: "2",
+            },
+          },
+        ],
+        prof: "2",
+      },
+      {
+        lvl: "3",
+        abilities: [
+          {
+            name: "Primal Path",
+            description:
+              "At 3rd level, you choose a path that shapes the nature of your rage. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.",
+          },
+        ],
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "3/day",
+            bonus: {
+              name: "Rage Damage",
+              amount: "2",
+            },
+          },
+        ],
+        prof: "2",
+      },
+      {
+        lvl: "4",
+        abilities: [
+          {
+            name: "Ability Score Improvement",
+            description:
+              "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can\u2019t increase an ability score above 20 using this feature. Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.",
+          },
+        ],
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "3/day",
+            bonus: {
+              name: "Rage Damage",
+              amount: "2",
+            },
+          },
+        ],
+        prof: "2",
+      },
+      {
+        lvl: "5",
+        abilities: [
+          {
+            name: "Extra Attack",
+            description:
+              "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.",
+            isAction: true,
+          },
+          {
+            name: "Fast Movement",
+            description:
+              "Starting at 5th level, your speed increases by 10 feet while you aren’t wearing heavy armor.",
+            isPassive: true,
+          },
+        ],
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "3/day",
+            bonus: {
+              name: "Rage Damage",
+              amount: "2",
+            },
+          },
+        ],
+        prof: "3",
+      },
+      {
+        lvl: "6",
+        abilities: [],
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "4/day",
+            bonus: {
+              name: "Rage Damage",
+              amount: "2",
+            },
+          },
+        ],
+      },
+      {
+        lvl: "7",
+        abilities: [
+          {
+            name: "Feral Instinct",
+            description:
+              "By 7th level, your instincts are so honed that you have advantage on initiative rolls. Additionally, if you are surprised at the beginning of combat and aren\u2019t incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn.",
+            isPassive: true,
+          },
+        ],
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "4/day",
+            bonus: {
+              name: "Rage Damage",
+              amount: "2",
+            },
+          },
+        ],
+        prof: "3",
+      },
+      {
+        lvl: "8",
+        abilities: [
+          {
+            name: "Ability Score Improvement",
+            description:
+              "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can\u2019t increase an ability score above 20 using this feature. Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.",
+          },
+        ],
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "4/day",
+            bonus: {
+              name: "Rage Damage",
+              amount: "2",
+            },
+          }],
+          prof: "3"
+      },
+      {
+        lvl: "9",
+        abilities: [{
+          name: "Brutal Critical",
+          description: "Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack. This increases to two additional dice at 13th level and three additional dice at 17th level.",
+          isPassive: true,
+        }],
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "4/day",
+            bonus: {
+              name: "Rage Damage",
+              amount: "3",
+            },
+          }],
+          prof: "4"
+      },
+      {
+        lvl: "10",
+        abilities: [],
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "4/day",
+            bonus: {
+              name: "Rage Damage",
+              amount: "3",
+            },
+          }],
+          prof: "4"
+      },
+      {
+        lvl: "11",
+        abilities: [{
+          name: "Relentless Rage",
+          description: "Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you\u2019re raging and don\u2019t die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead. Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10."
+        }],
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "4/day",
+            bonus: {
+              name: "Rage Damage",
+              amount: "3",
+            },
+          }],
+          prof: "4"
+      },
+      {
+        lvl: "12",
+        abilities: [{
+          name: "Ability Score Improvement",
+          description:
+            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can\u2019t increase an ability score above 20 using this feature. Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.",
+        },],
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "5/day",
+            bonus: {
+              name: "Rage Damage",
+              amount: "3",
+            },
+          }],
+          prof: "4"
+      },
+      {
+        lvl: "13",
+        
       }
     ],
   },
