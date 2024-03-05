@@ -1,11 +1,15 @@
 const Spells = require("./Spells");
-const Weapons = require("./Weapons");
-const Monsters = require('./Monsters')
-const Races = require("./Races")
+const Items = require("./Items");
+const Monsters = require("./Monsters");
+const Races = require("./Races");
+const Feats = require("./Feats");
+const Classes = require("./Classes");
 
 module.exports = {
   Spells,
-  Weapons,
+  Items,
   Monsters,
-  Races
+  Races,
+  Feats,
+  Classes,
 };
