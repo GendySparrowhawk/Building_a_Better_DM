@@ -12,9 +12,15 @@ const abilitySchema = new Schema({
   isAction: {
     type: Boolean,
   },
+  isBonusAction: {
+    type: Boolean,
+  },
+  isReaction: {
+    type: Boolean
+  },
   isPassive: {
     type: Boolean,
-  }
+  },
 });
 
 const spellSlotSchema = new Schema({
@@ -26,21 +32,29 @@ const spellSlotSchema = new Schema({
   },
 });
 
-const classFeatureSchema = new Schema ({
+const classFeatureSchema = new Schema({
   classFeature: {
     name: {
-        type: String,
-        required: true,
+      type: String,
+      required: true,
     },
     amount: {
-        type: String,
-        required: true
+      type: String,
+      required: true,
     },
     bonus: {
-        name: String,
-        amount: String,
-    }
-  }
+      name: String,
+      amount: String,
+    },
+  },
+});
+const subClassLevelSchema = new Schema({
+  lvl: {
+    type: String,
+    required: true,
+  },
+  spellSlots: [spellSlotSchema],
+  abilities: [abilitySchema],
 });
 
 const classLevelSchema = new Schema({
@@ -62,10 +76,7 @@ const subClassSchema = new Schema({
     type: String,
     required: true,
   },
-  lvl: {
-    type: String,
-  },
-  abilities: [abilitySchema],
+  levels: [subClassLevelSchema],
 });
 
 const classSchema = new Schema({
@@ -80,7 +91,7 @@ const classSchema = new Schema({
   savingThrows: [String],
   Proficiencies: [String],
   skills: [String],
-  levels: [classLevelSchema],  
+  levels: [classLevelSchema],
   subClasses: [subClassSchema],
 });
 

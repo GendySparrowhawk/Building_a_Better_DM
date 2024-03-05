@@ -16,7 +16,9 @@ async function seedAllData() {
     await raceData.seedRaces();
     console.log("races seeded!");
     await itemData.seedItems();
-    console.log("all items seeded!")
+    console.log("all items seeded!");
+    await classData.seedClasses();
+    console.log("all classes seeded!")
     console.log("all data seeded, yaay!");
   } catch (err) {
     console.error("error seeding data:", err);

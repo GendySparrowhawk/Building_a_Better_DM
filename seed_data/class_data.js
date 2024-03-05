@@ -131,7 +131,7 @@ const dndClassData = [
           {
             name: "Fast Movement",
             description:
-              "Starting at 5th level, your speed increases by 10 feet while you aren’t wearing heavy armor.",
+              "Starting at 5th level, your speed increases by 10 feet while you aren\u2019t wearing heavy armor.",
             isPassive: true,
           },
         ],
@@ -200,16 +200,20 @@ const dndClassData = [
               name: "Rage Damage",
               amount: "2",
             },
-          }],
-          prof: "3"
+          },
+        ],
+        prof: "3",
       },
       {
         lvl: "9",
-        abilities: [{
-          name: "Brutal Critical",
-          description: "Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack. This increases to two additional dice at 13th level and three additional dice at 17th level.",
-          isPassive: true,
-        }],
+        abilities: [
+          {
+            name: "Brutal Critical",
+            description:
+              "Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack. This increases to two additional dice at 13th level and three additional dice at 17th level.",
+            isPassive: true,
+          },
+        ],
         classFeature: [
           {
             name: "Rage",
@@ -218,8 +222,13 @@ const dndClassData = [
               name: "Rage Damage",
               amount: "3",
             },
-          }],
-          prof: "4"
+          },
+          {
+            name: "Brutal Critical",
+            amount: "1 dice",
+          },
+        ],
+        prof: "4",
       },
       {
         lvl: "10",
@@ -232,15 +241,23 @@ const dndClassData = [
               name: "Rage Damage",
               amount: "3",
             },
-          }],
-          prof: "4"
+          },
+          {
+            name: "Brutal Critical",
+            amount: "1 dice",
+          },
+        ],
+        prof: "4",
       },
       {
         lvl: "11",
-        abilities: [{
-          name: "Relentless Rage",
-          description: "Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you\u2019re raging and don\u2019t die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead. Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10."
-        }],
+        abilities: [
+          {
+            name: "Relentless Rage",
+            description:
+              "Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you\u2019re raging and don\u2019t die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead. Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.",
+          },
+        ],
         classFeature: [
           {
             name: "Rage",
@@ -249,16 +266,23 @@ const dndClassData = [
               name: "Rage Damage",
               amount: "3",
             },
-          }],
-          prof: "4"
+          },
+          {
+            name: "Brutal Critical",
+            amount: "1 dice",
+          },
+        ],
+        prof: "4",
       },
       {
         lvl: "12",
-        abilities: [{
-          name: "Ability Score Improvement",
-          description:
-            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can\u2019t increase an ability score above 20 using this feature. Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.",
-        },],
+        abilities: [
+          {
+            name: "Ability Score Improvement",
+            description:
+              "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can\u2019t increase an ability score above 20 using this feature. Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.",
+          },
+        ],
         classFeature: [
           {
             name: "Rage",
@@ -267,16 +291,17 @@ const dndClassData = [
               name: "Rage Damage",
               amount: "3",
             },
-          }],
-          prof: "4"
+          },
+          {
+            name: "Brutal Critical",
+            amount: "1 dice",
+          },
+        ],
+        prof: "4",
       },
       {
         lvl: "13",
-        abilities: [{
-          name: "Brutal Critical",
-          description: "Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack. This increases to two additional dice at 13th level and three additional dice at 17th level.",
-          isPassive: true,
-        }],
+        abilities: [],
         classFeature: [
           {
             name: "Rage",
@@ -285,8 +310,13 @@ const dndClassData = [
               name: "Rage Damage",
               amount: "3",
             },
-          }],
-          prof: "5" 
+          },
+          {
+            name: "Brutal Critical",
+            amount: "2 dice",
+          },
+        ],
+        prof: "5",
       },
       {
         lvl: "14",
@@ -299,16 +329,24 @@ const dndClassData = [
               name: "Rage Damage",
               amount: "3",
             },
-          }],
-          prof: "5" 
+          },
+          {
+            name: "Brutal Critical",
+            amount: "2 dice",
+          },
+        ],
+        prof: "5",
       },
       {
         lvl: "15",
-        abilities: [{
-          name: "Persistent Rage",
-          description: "Beginning at 15th level, your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it. ",
-          isPassive: true,
-        }],
+        abilities: [
+          {
+            name: "Persistent Rage",
+            description:
+              "Beginning at 15th level, your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it. ",
+            isPassive: true,
+          },
+        ],
         classFeature: [
           {
             name: "Rage",
@@ -317,16 +355,23 @@ const dndClassData = [
               name: "Rage Damage",
               amount: "3",
             },
-          }],
-          prof: "5"
+          },
+          {
+            name: "Brutal Critical",
+            amount: "2 dice",
+          },
+        ],
+        prof: "5",
       },
       {
         lvl: "16",
-        abilities: [{
-          name: "Ability Score Improvement",
-          description:
-            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can\u2019t increase an ability score above 20 using this feature. Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.",
-        },],
+        abilities: [
+          {
+            name: "Ability Score Improvement",
+            description:
+              "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can\u2019t increase an ability score above 20 using this feature. Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.",
+          },
+        ],
         classFeature: [
           {
             name: "Rage",
@@ -335,10 +380,201 @@ const dndClassData = [
               name: "Rage Damage",
               amount: "4",
             },
-          }],
-          prof: "5"
+          },
+          {
+            name: "Brutal Critical",
+            amount: "2 dice",
+          },
+        ],
+        prof: "5",
       },
-      
+      {
+        lvl: "17",
+        abilities: [],
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "6/day",
+            bonus: {
+              name: "Rage Damage",
+              amount: "4",
+            },
+          },
+          {
+            name: "Brutal Critical",
+            amount: "3 dice",
+          },
+        ],
+        prof: "6",
+      },
+      {
+        lvl: "18",
+        abilities: [
+          {
+            name: "Indomitable Might",
+            description:
+              "Beginning at 18th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total.",
+            isPassive: true,
+          },
+        ],
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "6/day",
+            bonus: {
+              name: "Rage Damage",
+              amount: "4",
+            },
+          },
+          {
+            name: "Brutal Critical",
+            amount: "3 dice",
+          },
+        ],
+        prof: "6",
+      },
+      {
+        lvl: "19",
+        abilities: [
+          {
+            name: "Ability Score Improvement",
+            description:
+              "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can\u2019t increase an ability score above 20 using this feature. Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.",
+          },
+        ],
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "6/day",
+            bonus: {
+              name: "Rage Damage",
+              amount: "4",
+            },
+          },
+          {
+            name: "Brutal Critical",
+            amount: "3 dice",
+          },
+        ],
+        prof: "6",
+      },
+      {
+        lvl: "20",
+        abilities: [
+          {
+            name: "Primal Champion",
+            description:
+              "At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24.",
+          },
+        ],
+        classFeature: [
+          {
+            name: "Rage",
+            amount: "unlimited",
+            bonus: {
+              name: "Rage Damage",
+              amount: "4",
+            },
+          },
+          {
+            name: "Brutal Critical",
+            amount: "3 dice",
+          },
+        ],
+        prof: "6",
+      },
+    ],
+    subClasses: [
+      {
+        name: "Path of the Ancestral Guardian",
+        levels: [
+          {
+            lvl: "3",
+            abilities: [
+              {
+                name: "Ancestral Protectors",
+                description:
+                  "Starting when you choose this path at 3rd level, spectral warriors appear when you enter your rage. While you're raging, the first creature you hit with an attack on your turn becomes the target of the warriors, which hinder its attacks. Until the start of your next turn, that target has disadvantage on any attack roll that isn't against you, and when the target hits a creature other than you with an attack, that creature has resistance to the damage dealt by the attack. The effect on the target ends early if your rage ends.",
+                isPassive: true,
+              },
+            ],
+          },
+          {
+            lvl: "6",
+            abilities: [
+              {
+                name: "Spirit Shield",
+                description:
+                  "Beginning at 6th level, the guardian spirits that aid you can provide supernatural protection to those you defend. If you are raging and another creature you can see within 30 feet of you takes damage, you can use your reaction to reduce that damage by 2d6. When you reach certain levels in this class, you can reduce the damage by more: by 3d6 at 10th level and by 4d6 at 14th level.",
+                isReaction: true,
+              },
+            ],
+          },
+          {
+            lvl: "10",
+            abilities: [
+              {
+                name: "Consult the Spirits",
+                description:
+                  "At 10th level, you gain the ability to consult with your ancestral spirits. When you do so, you cast the Augury or Clairvoyance spell, without using a spell slot or material components. Rather than creating a spherical sensor, this use of clairvoyance invisibly summons one of your ancestral spirits to the chosen location. Wisdom is your spellcasting ability for these spells. After you cast either spell in this way, you can't use this feature again until you finish a short or long rest.",
+                isAction: true,
+              },
+            ],
+          },
+          {
+            lvl: "14",
+            abilities: [
+              {
+                name: "Vengeful Ancestors",
+                description:
+                  "At 14th level, your ancestral spirits grow powerful enough to retaliate. When you use your Spirit Shield to reduce the damage of an attack, the attacker takes an amount of force damage that your Spirit Shield prevents.",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        name: "Path Of The Beast",
+        levels: [
+          {
+            lvl: "3",
+            abilities: [
+              {
+                name: "Form of the Beast",
+                description:
+                  "Starting when you choose this path at 3rd level, when you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal. You choose the weapon\u2019s form each time you rage: Bite. Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals 1d8 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit. Claws. Each of your hands transforms into a claw, which you can use as a weapon if it\u2019s empty. It deals 1d6 slashing damage on a hit. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action. Tail. You grow a lashing, spiny tail, which deals 1d8 piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you.",
+                isAction: true,
+              },
+            ],
+          },
+          {
+            lvl: "6",
+            abilities: [
+              {
+                name: "Bestial Soul",
+                description:
+                  "Beginning at 6th level, the feral power within you increases, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. You can also alter your form to help you adapt to your surroundings. When you finish a short or long rest, choose one of the following benefits, which lasts until you finish a short or long rest: You gain a swimming speed equal to your walking speed, and you can breathe underwater. You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check. When you jump, you can make a Strength (Athletics) check and extend your jump by a number of feet equal to the check\u2019s total. You can make this special check only once per turn.",
+                isAction: true,
+              },
+            ],
+          },
+          {
+            lvl: "10",
+            abilities: [{
+              name: "Infectious Fury",
+              description: "At 10th level, when you hit a creature with your natural weapons while you are raging, the beast within you can curse your target with rabid fury. The target must succeed on a Wisdom saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or suffer one of the following effects (your choice): The target must use its reaction to make a melee attack against another creature of your choice that you can see. Target takes 2d12 psychic damage. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+              isAction: true,
+            }]
+          },
+          {
+            lvl: "14",
+            abilities: [{
+              name: "Call the Hunt",
+              description: "At 14th level, the beast within you grows so powerful that you can spread its ferocity to others and gain resilience from them joining your hunt. When you enter your rage, you can choose a number of other willing creatures you can see within 30 feet of you equal to your Constitution modifier (minimum of one creature). You gain 5 temporary hit points for each creature that accepts this feature. Until the rage ends, the chosen creatures can use the following benefit once on each of their turns: when the creature hits a target with an attack roll and deals damage to it, the creature can roll a d6 and gain a bonus to the damage equal to the number rolled. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
+            }]
+          }
+        ],
+      },
     ],
   },
 ];
