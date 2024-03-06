@@ -19,7 +19,7 @@ async function seedAllData() {
     await itemData.seedItems();
     console.log("all items seeded!");
     await classData.seedClasses();
-    console.log("all classes seeded!");
+    console.log("all classes seeded!");dxx
     await featData.seedFeats();
     console.log("all feats seeded!")
     console.log("all data seeded, yaay!");

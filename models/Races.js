@@ -1,6 +1,5 @@
 const { Schema, model } = require("mongoose");
 
-
 const traitSchema = new Schema({
   name: {
     type: String,
@@ -13,7 +12,16 @@ const traitSchema = new Schema({
     type: String,
     required: true,
   },
-  action: {
+  isAction: {
+    type: Boolean,
+  },
+  isBonusAction: {
+    type: Boolean,
+  },
+  isReaction: {
+    type: Boolean,
+  },
+  isPassive: {
     type: Boolean,
   },
 });

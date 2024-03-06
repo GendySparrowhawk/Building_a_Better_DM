@@ -11,6 +11,7 @@ const raceData = [
             name: "Dwarven Armor Training",
             lvl: "1",
             description: "You have proficiency with light and medium armor",
+            isPassive: true,
           },
         ],
         abilityScoreIncrease: [
@@ -28,6 +29,7 @@ const raceData = [
             lvl: "1",
             description:
               "Your hit point maximum increases by 1, and again by 1 each time you level up",
+            isPassive: true,
           },
         ],
         abilityScoreIncrease: [
@@ -44,30 +46,35 @@ const raceData = [
             name: "Superior Darkvision",
             lvl: "1",
             description: "you have 120 ft darkvision",
+            isPassive: true,
           },
           {
             name: "Sunlight Sensitivity",
             lvl: "1",
             description:
               "You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.",
+            isPassive: true,
           },
           {
             name: "Duergar Magic",
             lvl: "3",
             description:
               "At 3rd level you can cast the enlarge/reduce spell on yourself once (enlarge only).",
+            isPassive: true,
           },
           {
             name: "Duergar Magic",
             lvl: "5",
             description:
               "At 5th level you can cast the invisibility spell on yourself once. You regain all uses of these spells after a long rest, or a short or long rest if you are in the Underdark. Your spellcasting ability for these spells is Intelligence.",
+            isPassive: true,
           },
           {
             name: "Duergar Resilience",
             lvl: "1",
             description:
               "You have advantage on saving throws against illusions and against being charmed or paralyzed.",
+            isPassive: true,
           },
         ],
       },
@@ -97,18 +104,119 @@ const raceData = [
         lvl: "1",
         description:
           "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can\u2109t discern color in darkness, only shades of gray",
+        isPassive: true,
       },
       {
         name: "Dwarven Resilience",
         lvl: "1",
         description:
           "You have advantage on saving throws against poison, and you have resistance against poison damage",
+        isPassive: true,
       },
       {
         name: "Stonecunning",
         lvl: "1",
         description:
           "Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.",
+        isPassive: true,
+      },
+    ],
+  },
+  {
+    name: "Elf",
+    subraces: [
+      {
+        name: "Eladrin",
+        traits: [
+          {
+            name: "Fey Step",
+            description:
+              "You can cast the misty step spell once using this trait. You regain the ability to do so when you finish a short or long rest.",
+            isPassive: true,
+          },
+        ],
+        abilityScoreIncrease: [
+          {
+            name: "INT",
+            amount: "1",
+          },
+        ],
+      },
+      {
+        name: "High Elf",
+        traits: [
+          {
+            name: "Cantrip",
+            description:
+              "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.",
+            isPassive: true,
+          },
+          {
+            name: "Extra Language",
+            description:
+              "You can speak, read, and write one extra language of your choice.",
+            isPassive: true,
+          },
+        ],
+        abilityScoreIncrease: [
+          {
+            name: "INT",
+            amount: "1",
+          },
+        ],
+      },
+      {
+        name: "Wood Elf",
+        traits: [
+          {
+            name: "Fleet of Foot",
+            description: "Your base walking speed increases to 35 feet",
+            isPassive: true,
+          },
+          {
+            name: "Mask of the Wild",
+            description:
+              "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.",
+            isPassive: true,
+          },
+        ],
+        abilityScoreIncrease: [
+          {
+            name: "WIS",
+            amount: "1",
+          },
+        ],
+      },
+    ],
+    size: "Medium",
+    speed: "30ft",
+    languages: ["Common", "Elvish"],
+    abilityScoreIncrease: [
+      {
+        name: "DEX",
+        amount: "2",
+      },
+    ],
+    proficiencies: ["Perception", "Longsword", "Shortsword", "Longbow"],
+    traits: [
+      {
+        name: "Darkvision",
+        lvl: "1",
+        description:
+          "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can\u2019t discern color in darkness, only shades of gray.",
+        isPassive: ture,
+      },
+      {
+        name: "Fey Ancestry",
+        description:
+          "You have advantage on saving throws against being charmed, and magic can\u20109t put you to sleep.",
+        isPassive: true,
+      },
+      {
+        name: "Trance",
+        description:
+          "Elves don\u2019t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+        isPassive: true,
       },
     ],
   },
