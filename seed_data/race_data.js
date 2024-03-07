@@ -426,6 +426,10 @@ const raceData = [
       },
     ],
   },
+  {
+    name: "Human",
+    
+  }
 ];
 
 async function seedRaces() {

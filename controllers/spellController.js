@@ -1,11 +1,15 @@
-const Spell = require("../models/index");
+const Spell = require("../models/Spells");
 
 async function findSpell(req, res) {
   try {
     const spellName = req.body;
 
-    await Spell.findOne(spellName === Spell.name)
-    res.send.json()
+    const spell = await Spell.findOne({ name: spellName });
+    if (!spell) {
+      return res.status(404).json({ error: "Spell not found" });
+    } else {
+      return res.status(200).json(spell);
+    }
   } catch (err) {
     console.error("no spell found by that name", err);
     res
@@ -13,6 +17,51 @@ async function findSpell(req, res) {
       .json({ error: "An oops happened while trying to find the spell" });
   }
 }
+
+async function findAllSpells(req, res) {
+  try {
+    const spells = await Spell.find({});
+    res.status(200).json(spells);
+  } catch (err) {
+    console.error("no spells", err);
+    res
+      .status(500)
+      .json({ error: "An oops happened while trying to find the spells" });
+  }
+}
+
+async function findSpellbyClassLvl(req, res) {
+  try {
+    const { spellClass, lvl } = req.query;
+    const spells = await Spell.find({ spellClass: spellClass, lvl: lvl });
+
+    res.status(200).json(spells);
+  } catch (err) {
+    console.error("no spells", err);
+    res
+      .status(500)
+      .json({ error: "An oops happened while trying to find the spells" });
+  }
+}
+
+async function findSpellByClass(req, res) {
+  try {
+    const spellQuery = req.params;
+
+    const spells = await Spell.find({ spellClass: spellQuery });
+    if (!spells) {
+      return res.status(404).json({ error: "Unable to get spels for class" });
+    } else {
+      return res.json(spells);
+    }
+  } catch (err) {
+    console.error("No spells for that class", err);
+    res
+      .status(500)
+      .json({ error: "An oops happened while trying to find the spells" });
+  }
+}
+
 async function addSpell(req, res) {
   try {
     const {
@@ -79,4 +128,8 @@ async function deleteSpell(req, res) {
 module.exports = {
   addSpell,
   deleteSpell,
+  findAllSpells,
+  findSpell,
+  findSpellByClass,
+  findSpellbyClassLvl,
 };
