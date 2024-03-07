@@ -1,8 +1,9 @@
 const Spell = require("../models/Spells");
 
+// insomnia tested mother approved
 async function findSpell(req, res) {
   try {
-    const spellName = req.body;
+    const spellName = req.params.name;
 
     const spell = await Spell.findOne({ name: spellName });
     if (!spell) {
@@ -18,6 +19,7 @@ async function findSpell(req, res) {
   }
 }
 
+// insomnia tested mother approved
 async function findAllSpells(req, res) {
   try {
     const spells = await Spell.find({});
@@ -32,7 +34,7 @@ async function findAllSpells(req, res) {
 
 async function findSpellbyClassLvl(req, res) {
   try {
-    const { spellClass, lvl } = req.query;
+    const { spellClass, lvl } = req.params;
     const spells = await Spell.find({ spellClass: spellClass, lvl: lvl });
 
     res.status(200).json(spells);
@@ -44,11 +46,12 @@ async function findSpellbyClassLvl(req, res) {
   }
 }
 
+// insomnia tested mother approved
 async function findSpellByClass(req, res) {
   try {
-    const spellQuery = req.params;
+    const spellClass = req.params.spellClass;
 
-    const spells = await Spell.find({ spellClass: spellQuery });
+    const spells = await Spell.find({ spellClass: { $in: [spellClass] }, });
     if (!spells) {
       return res.status(404).json({ error: "Unable to get spels for class" });
     } else {
