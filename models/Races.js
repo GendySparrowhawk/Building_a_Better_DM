@@ -32,6 +32,9 @@ const subraceSchema = new Schema({
     required: true,
   },
   traits: [traitSchema],
+  weaponProficiencies: [String],
+  SkillProficiencies: [String],
+  ToolProficiencies: [String],
   abilityScoreIncrease: [
     {
       name: {
@@ -72,8 +75,10 @@ const racesSchema = new Schema({
       },
     },
   ],
-  proficiencies: [String],
   traits: [traitSchema],
+  weaponProficiencies: [String],
+  SkillProficiencies: [String],
+  ToolProficiencies: [String],
 });
 
 const Race = model("Race", racesSchema);
