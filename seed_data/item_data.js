@@ -11,7 +11,7 @@ const itemData = [
     description: "Speak softly...",
     isWeapon: true,
     rarity: "common",
-    weight: "2lb"
+    weight: "2lb",
   },
   {
     name: "Dagger",
@@ -23,7 +23,7 @@ const itemData = [
     description: "Up close adn personal...",
     isWeapon: true,
     rarity: "common",
-    weight: "1lb"
+    weight: "1lb",
   },
   {
     name: "Greatclub",
@@ -35,7 +35,7 @@ const itemData = [
     description: "Speak even quietter...",
     isWeapon: true,
     rarity: "common",
-    weight: "10lb"
+    weight: "10lb",
   },
   {
     name: "Handaxe",
@@ -71,7 +71,7 @@ const itemData = [
     description: "stop. light hammer time.",
     isWeapon: true,
     rarity: "common",
-    weight: "2lb"
+    weight: "2lb",
   },
   {
     name: "Mace",
@@ -83,7 +83,7 @@ const itemData = [
     description: "A classic of henchmen across faerun",
     isWeapon: true,
     rarity: "common",
-    weight: "4lb"
+    weight: "4lb",
   },
   {
     name: "Quarterstaff",
@@ -95,7 +95,7 @@ const itemData = [
     description: "I cast Shill-agllee, wait no shillog? wait - Shillelagh!",
     isWeapon: true,
     rarity: "common",
-    weight: "4lb"
+    weight: "4lb",
   },
   {
     name: "Sickle",
@@ -107,7 +107,7 @@ const itemData = [
     description: "A farmers best friend.",
     isWeapon: true,
     rarity: "common",
-    weight: "2lb"
+    weight: "2lb",
   },
   {
     name: "Spear",
@@ -119,7 +119,7 @@ const itemData = [
     description: "This end up.",
     isWeapon: true,
     rarity: "common",
-    weight: "3lb"
+    weight: "3lb",
   },
   {
     name: "Light Crossbow",
@@ -131,7 +131,7 @@ const itemData = [
     description: "do I get sneak attack damage on this guy...?",
     isWeapon: true,
     rarity: "common",
-    weight: "5lb"
+    weight: "5lb",
   },
   {
     name: "Dart",
@@ -143,7 +143,7 @@ const itemData = [
     description: "not always posion-tipped, but usually.",
     isWeapon: true,
     rarity: "common",
-    weight: ".25lb"
+    weight: ".25lb",
   },
   {
     name: "Shortbow",
@@ -155,7 +155,7 @@ const itemData = [
     description: "short bow for a short king",
     isWeapon: true,
     rarity: "common",
-    weight: "2lb"
+    weight: "2lb",
   },
   {
     name: "Sling",
@@ -167,7 +167,7 @@ const itemData = [
     description: "when you need to get biblical",
     isWeapon: true,
     rarity: "common",
-    weight: "0"
+    weight: "0",
   },
   {
     name: "Battleaxe",
@@ -179,7 +179,7 @@ const itemData = [
     description: "ax or axe?",
     isWeapon: true,
     rarity: "common",
-    weight: "4lb"
+    weight: "4lb",
   },
   {
     name: "Flail",
@@ -191,7 +191,7 @@ const itemData = [
     description: "Good enough for the witch king good enough for me!",
     isWeapon: true,
     rarity: "common",
-    weight: "2lb"
+    weight: "2lb",
   },
   {
     name: "Glaive",
@@ -203,7 +203,7 @@ const itemData = [
     description: "Just screams Drow ranger no?",
     isWeapon: true,
     rarity: "common",
-    weight: "6lb"
+    weight: "6lb",
   },
   {
     name: "Greataxe",
@@ -215,7 +215,7 @@ const itemData = [
     description: "That ol\u2019 thing? Whats so great abou-.",
     isWeapon: true,
     rarity: "common",
-    weight: "7lb"
+    weight: "7lb",
   },
   {
     name: "Greatsword",
@@ -227,7 +227,7 @@ const itemData = [
     description: "That ol\u2019 thing? Whats so great abou-.",
     isWeapon: true,
     rarity: " common",
-    weight: "6lb"
+    weight: "6lb",
   },
   {
     name: "Halberd",
@@ -239,7 +239,7 @@ const itemData = [
     description: "Always making trip attacks.",
     isWeapon: true,
     rarity: " common",
-    weight: "6lb"
+    weight: "6lb",
   },
   {
     name: "Lance",
@@ -251,7 +251,7 @@ const itemData = [
     description: "Not just for horses anymore!.",
     isWeapon: true,
     rarity: " common",
-    weight: "6lb"
+    weight: "6lb",
   },
   {
     name: "Longsword",
@@ -263,7 +263,7 @@ const itemData = [
     description: "Classic for a reason",
     isWeapon: true,
     rarity: " common",
-    weight: "3lb"
+    weight: "3lb",
   },
   {
     name: "Maul",
@@ -275,7 +275,7 @@ const itemData = [
     description: "bigger, better, and crits like mother.",
     isWeapon: true,
     rarity: " common",
-    weight: "10lb"
+    weight: "10lb",
   },
   {
     name: "Morningstar",
@@ -287,7 +287,7 @@ const itemData = [
     description: "Wait was this the weapon the witch king had?",
     isWeapon: true,
     rarity: " common",
-    weight: "4lb"
+    weight: "4lb",
   },
   {
     name: "Pike",
@@ -296,10 +296,11 @@ const itemData = [
     damageType: "piercing",
     weaponType: "martial",
     range: "meele",
-    description: "how is this not a spear? No - I don't want to hear about the thirty years war.",
+    description:
+      "how is this not a spear? No - I don't want to hear about the thirty years war.",
     isWeapon: true,
     rarity: " common",
-    weight: "18lb"
+    weight: "18lb",
   },
   {
     name: "Rapier",
@@ -311,7 +312,7 @@ const itemData = [
     description: "Remeber that fencing scene in the Parent Trap?",
     isWeapon: true,
     rarity: " common",
-    weight: "2lb"
+    weight: "2lb",
   },
   {
     name: "Scimitar",
@@ -323,7 +324,7 @@ const itemData = [
     description: "For druids who want an edge.",
     isWeapon: true,
     rarity: " common",
-    weight: "3lb"
+    weight: "3lb",
   },
   {
     name: "Shortsword",
@@ -335,7 +336,7 @@ const itemData = [
     description: "alwasy an off-hand never a bridesmaid.",
     isWeapon: true,
     rarity: " common",
-    weight: "2lb"
+    weight: "2lb",
   },
   {
     name: "Trident",
@@ -347,7 +348,7 @@ const itemData = [
     description: "Aquaman's got nothing on me.",
     isWeapon: true,
     rarity: " common",
-    weight: "4lb"
+    weight: "4lb",
   },
   {
     name: "War Pick",
@@ -359,7 +360,7 @@ const itemData = [
     description: "not to be confused with the war-tooth-pick",
     isWeapon: true,
     rarity: " common",
-    weight: "2lb"
+    weight: "2lb",
   },
   {
     name: "Warhammer",
@@ -371,7 +372,7 @@ const itemData = [
     description: "Seems so satisfying to swing.",
     isWeapon: true,
     rarity: " common",
-    weight: "2lb"
+    weight: "2lb",
   },
   {
     name: "Whip",
@@ -383,7 +384,7 @@ const itemData = [
     description: "A Belmont classic.",
     isWeapon: true,
     rarity: " common",
-    weight: "3lb"
+    weight: "3lb",
   },
   {
     name: "Blowgun",
@@ -395,7 +396,7 @@ const itemData = [
     description: "only used to protect artifacts",
     isWeapon: true,
     rarity: " common",
-    weight: "1lb"
+    weight: "1lb",
   },
   {
     name: "Hand Crossbow",
@@ -407,7 +408,7 @@ const itemData = [
     description: "pew-pew bonus aciton",
     isWeapon: true,
     rarity: " common",
-    weight: "3lb"
+    weight: "3lb",
   },
   {
     name: "Heavy Crossbow",
@@ -419,7 +420,7 @@ const itemData = [
     description: "no but for real, do I get sneak-attack?",
     isWeapon: true,
     rarity: " common",
-    weight: "18lb"
+    weight: "18lb",
   },
   {
     name: "Longbow",
@@ -431,7 +432,7 @@ const itemData = [
     description: "again, no, I do not want to hear about the thirty years war!",
     isWeapon: true,
     rarity: " common",
-    weight: "2lb"
+    weight: "2lb",
   },
   {
     name: "Longbow",
@@ -443,7 +444,7 @@ const itemData = [
     description: "again, no, I do not want to hear about the thirty years war!",
     isWeapon: true,
     rarity: " common",
-    weight: "2lb" 
+    weight: "2lb",
   },
   {
     name: "Padded",
@@ -482,7 +483,8 @@ const itemData = [
     name: "Shield",
     properties: ["Shield"],
     armorType: "Shield",
-    description: "Styled any way you like, be it metal or wodden its still +2 to your AC unless you ask your DM.",
+    description:
+      "Styled any way you like, be it metal or wodden its still +2 to your AC unless you ask your DM.",
     isArmor: true,
     acBonus: "2",
     dexBonus: "full",
@@ -531,13 +533,14 @@ const itemData = [
     acBonus: "14",
     dexBonus: "2",
     rarity: "common",
-    weight: "45lb", 
+    weight: "45lb",
   },
   {
     name: "Breast Plate",
     properties: [""],
     armorType: "Medium",
-    description: "Not actually sure why there isn\u2019t disadvantage on stealth for this one.",
+    description:
+      "Not actually sure why there isn\u2019t disadvantage on stealth for this one.",
     isArmor: true,
     acBonus: "14",
     dexBonus: "2",
@@ -559,7 +562,8 @@ const itemData = [
     name: "Ring Mail",
     properties: ["stealth disadvantage"],
     armorType: "Heavy",
-    description: "Functionaly worse than scale mail and twice as tedious to make.",
+    description:
+      "Functionaly worse than scale mail and twice as tedious to make.",
     isArmor: true,
     acBonus: "14",
     dexBonus: "0",
@@ -568,8 +572,7 @@ const itemData = [
   },
   {
     name: "Chain Mail",
-    properties: ["stealth disadvantage", 
-  "req. STR 13"],
+    properties: ["stealth disadvantage", "req. STR 13"],
     armorType: "Heavy",
     description: "Also great for cleaning cast iron.",
     isArmor: true,
@@ -593,7 +596,7 @@ const itemData = [
     name: "Plate",
     properties: ["stealth disadvantage", "req. STR 15"],
     armorType: "Heavy",
-    description: "as in \"I ate the whole plate\".",
+    description: 'as in "I ate the whole plate".',
     isArmor: true,
     acBonus: "18",
     dexBonus: "0",
@@ -604,9 +607,10 @@ const itemData = [
     name: "acid",
     properties: ["Throwable", "Improvised Weapon"],
     damage: "2d6",
-    damageType:"Acid",
+    damageType: "Acid",
     range: "20/60",
-    description: "As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged Attack against a creature or object, treating the acid as an improvised weapon. On a hit, the target takes 2d6 acid damage.",
+    description:
+      "As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged Attack against a creature or object, treating the acid as an improvised weapon. On a hit, the target takes 2d6 acid damage.",
     isItem: true,
     rarity: "common",
     weight: "1lb",
@@ -615,76 +619,92 @@ const itemData = [
     name: "Alchemist\u2019s Fire (flask)",
     properties: ["Throwable", "Improvised Weapon"],
     damage: "1d4",
-    damageType:"Fire",
+    damageType: "Fire",
     range: "20/60",
-    description: "This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged Attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.",
+    description:
+      "This sticky, adhesive fluid ignites when exposed to air. As an action, you can throw this flask up to 20 feet, shattering it on impact. Make a ranged Attack against a creature or object, treating the alchemist's fire as an improvised weapon. On a hit, the target takes 1d4 fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.",
     isItem: true,
     rarity: "common",
     weight: "1lb",
   },
   {
-name: "Alchemist\u2019s Supplies",
-properties: ["Tools"],
-description: "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
-isItem: true,
-rarity: "common",
-weight: "8lb"
+    name: "Alchemist\u2019s Supplies",
+    properties: ["Tools"],
+    description:
+      "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.",
+    isItem: true,
+    rarity: "common",
+    weight: "8lb",
   },
   {
     name: "Amulet",
-properties: ["Gear", "Spellcasting Focus"],
-description: "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic. Pantheons lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.",
-isItem: true,
-rarity: "common",
-weight: ".5lb"
+    properties: ["Gear", "Spellcasting Focus"],
+    description:
+      "A holy symbol is a representation of a god or pantheon. It might be an amulet depicting a symbol representing a deity, the same symbol carefully engraved or inlaid as an emblem on a shield, or a tiny box holding a fragment of a sacred relic. Pantheons lists the symbols commonly associated with many gods in the multiverse. A cleric or paladin can use a holy symbol as a spellcasting focus. To use the symbol in this way, the caster must hold it in hand, wear it visibly, or bear it on a shield.",
+    isItem: true,
+    rarity: "common",
+    weight: ".5lb",
   },
   {
     name: "Amulet of Health",
-properties: ["Gear", "Wondrous", "Attunement"],
-description: "Your Constitution score is 19 while you wear this amulet. It has no effect on you if your Constitution score is already 19 or higher.",
-isItem: true,
-rarity: "rare",
-weight: ".5lb"
+    properties: ["Gear", "Wondrous", "Attunement"],
+    description:
+      "Your Constitution score is 19 while you wear this amulet. It has no effect on you if your Constitution score is already 19 or higher.",
+    isItem: true,
+    rarity: "rare",
+    weight: ".5lb",
   },
   {
     name: "Amulet of Proof against Detection and Location",
-properties: ["Gear", "Wondrous", "Attunement"],
-description: "While wearing this amulet, you are hidden from divination magic. You can't be targeted by such magic or perceived through magical scrying sensors.",
-isItem: true,
-rarity: "uncommon",
-weight: ".5lb"
+    properties: ["Gear", "Wondrous", "Attunement"],
+    description:
+      "While wearing this amulet, you are hidden from divination magic. You can't be targeted by such magic or perceived through magical scrying sensors.",
+    isItem: true,
+    rarity: "uncommon",
+    weight: ".5lb",
   },
   {
     name: "Amulet of the Planes",
     properties: ["Gear", "Wondrous", "Attunement"],
-    description: "While wearing this amulet, you can use an action to name a location that you are familiar with on another plane of existence. Then make a DC 15 Intelligence check. On a successful check, you cast the plane shift spell. On a failure, you and each creature and object within 15 feet of you travel to a random destination. Roll a d100. On a 1-60, you travel to a random location on the plane you named. On a 61-100, you travel to a randomly determined plane of existence.",
+    description:
+      "While wearing this amulet, you can use an action to name a location that you are familiar with on another plane of existence. Then make a DC 15 Intelligence check. On a successful check, you cast the plane shift spell. On a failure, you and each creature and object within 15 feet of you travel to a random destination. Roll a d100. On a 1-60, you travel to a random location on the plane you named. On a 61-100, you travel to a randomly determined plane of existence.",
     isItem: true,
     rarity: "very rare",
-    weight: ".5lb"
+    weight: ".5lb",
   },
   {
     name: "Animated Shield",
     properties: ["Gear", "Wondrous", "Attunement", "Shield"],
-    description: "While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free.",
+    description:
+      "While holding this shield, you can speak its command word as a bonus action to cause it to animate. The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free. The shield remains animated for 1 minute, until you use a bonus action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free.",
     isItem: true,
     isArmor: true,
     acBonus: "2",
     rarity: "very rare",
-    weight: "6lb"
+    weight: "6lb",
   },
   {
-name: "Antitoxin",
-properties: ["gear", "consumable"],
-description: "A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs.",
-isItem: true,
-rarity: "common",
-weight: "0"
+    name: "Antitoxin",
+    properties: ["gear", "consumable"],
+    description:
+      "A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour. It confers no benefit to undead or constructs.",
+    isItem: true,
+    rarity: "common",
+    weight: "0",
   },
   {
     name: "Armor of Invulnerability",
-    properties: ["Gear", "Wondrous", "Attunement", "stealth disadvantage", "req. STR 15"],
+    properties: [
+      "Gear",
+      "Wondrous",
+      "Attunement",
+      "stealth disadvantage",
+      "req. STR 15",
+    ],
     armorType: "Heavy",
-    description: "You have resistance to nonmagical damage while you wear this armor. Additionally, you can use an action to make yourself immune to nonmagical damage for 10 minutes or until you are no longer wearing the armor. Once this special action is used, it can't be used again until the next dawn.",
+    description:
+      "You have resistance to nonmagical damage while you wear this armor. Additionally, you can use an action to make yourself immune to nonmagical damage for 10 minutes or until you are no longer wearing the armor. Once this special action is used, it can't be used again until the next dawn.",
+    isArmor: true,
     acBonus: "18",
     dexBonus: "0",
     rarity: "legendary",
@@ -692,9 +712,17 @@ weight: "0"
   },
   {
     name: "Armor of Vulnerability",
-    properties: ["Gear", "Wondrous", "Attunement", "stealth disadvantage", "req. STR 15"],
+    properties: [
+      "Gear",
+      "Wondrous",
+      "Attunement",
+      "stealth disadvantage",
+      "req. STR 15",
+    ],
     armorType: "Heavy",
-    description: "While wearing this armor, you have resistance to one of the following damage types: bludgeoning, piercing, or slashing. The GM chooses the type or determines it randomly. Curse. This armor is cursed, a fact that is revealed only when an identify spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by the remove curse spell or similar magic; removing the armor fails to end the curse. While cursed, you have vulnerability to two of the three damage types associated with the armor (not the one to which it grants resistance).",
+    description:
+      "While wearing this armor, you have resistance to one of the following damage types: bludgeoning, piercing, or slashing. The GM chooses the type or determines it randomly. Curse. This armor is cursed, a fact that is revealed only when an identify spell is cast on the armor or you attune to it. Attuning to the armor curses you until you are targeted by the remove curse spell or similar magic; removing the armor fails to end the curse. While cursed, you have vulnerability to two of the three damage types associated with the armor (not the one to which it grants resistance).",
+    isArmor: true,
     acBonus: "18",
     dexBonus: "0",
     rarity: "legendary",
@@ -703,18 +731,19 @@ weight: "0"
   {
     name: "Arrow of Slaying",
     properties: ["ammunition", "gear"],
-    description: "An arrow of slaying is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both arrows of dragon slaying and arrows of blue dragon slaying. If a creature belonging to the type, race, or group associated with an arrow of slaying takes damage from the arrow, the creature must make a DC 17 Constitution saving throw, taking an extra 6d10 piercing damage on a failed save, or half as much extra damage on a successful one. Once an arrow of slaying deals its extra damage to a creature, it becomes a nonmagical arrow. Other types of magic ammunition of this kind exist, such as bolts of slaying meant for a crossbow, though arrows are most common.",
+    description:
+      "An arrow of slaying is a magic weapon meant to slay a particular kind of creature. Some are more focused than others; for example, there are both arrows of dragon slaying and arrows of blue dragon slaying. If a creature belonging to the type, race, or group associated with an arrow of slaying takes damage from the arrow, the creature must make a DC 17 Constitution saving throw, taking an extra 6d10 piercing damage on a failed save, or half as much extra damage on a successful one. Once an arrow of slaying deals its extra damage to a creature, it becomes a nonmagical arrow. Other types of magic ammunition of this kind exist, such as bolts of slaying meant for a crossbow, though arrows are most common.",
     rarity: "very rare",
-    weight: ".05"
+    weight: ".05",
   },
   {
     name: "Arrows",
     properties: ["ammunition", "gear"],
-    description: "You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+    description:
+      "You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
     rarity: "common",
-    weight: ".05"
+    weight: ".05",
   },
-  
 ];
 
 async function seedItems() {

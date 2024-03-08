@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require('mongoose')
 const { mongodbURI } = require('./config/config')
-const { spellRoutes, featRoutes} = require('./routes/');
+const { spellRoutes, featRoutes, itemRoutes} = require('./routes/');
 
 
 const app = express();
@@ -11,6 +11,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json())
 app.use('/api', spellRoutes);
 app.use('/api', featRoutes);
+app.use('/api', itemRoutes);
 
 
 

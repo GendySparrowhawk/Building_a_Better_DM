@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const spellController = require("../controllers/");
+const spellController = require("../controllers/spellController");
 
 router.get("/spells", spellController.findAllSpells);
 router.get("/spell/:name", spellController.findSpell);
