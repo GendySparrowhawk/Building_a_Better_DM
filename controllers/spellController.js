@@ -32,11 +32,19 @@ async function findAllSpells(req, res) {
   }
 }
 
+// insomnia tested mother approved
 async function findSpellbyClassLvl(req, res) {
   try {
-    const { spellClass, lvl } = req.params;
-    const spells = await Spell.find({ spellClass: spellClass, lvl: lvl });
+    const { spellClass, lvl } = req.query;
+    
+    // console.log("Spell Class:", spellClass);
+    // console.log("Level:", lvl);
 
+    if (!spellClass || !lvl) {
+      return res.status(400).json({ error: "Missing required parameters" });
+    }
+
+    const spells = await Spell.find({ spellClass: spellClass, lvl: lvl });
     res.status(200).json(spells);
   } catch (err) {
     console.error("no spells", err);

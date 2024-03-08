@@ -1,3 +1,4 @@
 const spellRoutes = require("./spellRoutes");
+const featRoutes = require("./featRoutes");
 
-module.exports = spellRoutes;
+module.exports = { spellRoutes, featRoutes };

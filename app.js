@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require('mongoose')
 const { mongodbURI } = require('./config/config')
-const routes = require('./routes/');
+const { spellRoutes, featRoutes} = require('./routes/');
 
 
 const app = express();
@@ -9,7 +9,10 @@ const PORT = process.env.PORT || 3000;
 
 
 app.use(express.json())
-app.use('/api', routes)
+app.use('/api', spellRoutes);
+app.use('/api', featRoutes);
+
+
 
 
 mongoose.connect(mongodbURI)
