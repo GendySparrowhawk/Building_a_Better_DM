@@ -22,14 +22,17 @@ const abilitySchema = new Schema({
     type: Boolean,
   },
 });
-
+// const spellLvlSchema = new Schema({
+// lvl: {
+//   type: String,
+// },
+// slots: {
+//   type: String
+// }
+// })
 const spellSlotSchema = new Schema({
-  level: {
-    type: Number,
-  },
-  slots: {
-    type: Number,
-  },
+ lvl: String,
+ slots: String,
 });
 
 const classFeatureSchema = new Schema({
@@ -64,6 +67,7 @@ const classLevelSchema = new Schema({
   },
   abilities: [abilitySchema],
   spellSlots: [spellSlotSchema],
+  spellsKnown: String,
   classFeature: [classFeatureSchema],
   prof: {
     type: String,
@@ -89,8 +93,9 @@ const classSchema = new Schema({
     required: true,
   },
   savingThrows: [String],
-  Proficiencies: [String],
-  skills: [String],
+  weaponProficiencies: [String],
+  skillProficiencies: [String],
+  toolProficiencies: [String],
   levels: [classLevelSchema],
   subClasses: [subClassSchema],
 });

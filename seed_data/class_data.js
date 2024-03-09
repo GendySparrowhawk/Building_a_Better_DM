@@ -560,24 +560,133 @@ const dndClassData = [
           },
           {
             lvl: "10",
-            abilities: [{
-              name: "Infectious Fury",
-              description: "At 10th level, when you hit a creature with your natural weapons while you are raging, the beast within you can curse your target with rabid fury. The target must succeed on a Wisdom saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or suffer one of the following effects (your choice): The target must use its reaction to make a melee attack against another creature of your choice that you can see. Target takes 2d12 psychic damage. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
-              isAction: true,
-            }]
+            abilities: [
+              {
+                name: "Infectious Fury",
+                description:
+                  "At 10th level, when you hit a creature with your natural weapons while you are raging, the beast within you can curse your target with rabid fury. The target must succeed on a Wisdom saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or suffer one of the following effects (your choice): The target must use its reaction to make a melee attack against another creature of your choice that you can see. Target takes 2d12 psychic damage. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+                isAction: true,
+              },
+            ],
           },
           {
             lvl: "14",
-            abilities: [{
-              name: "Call the Hunt",
-              description: "At 14th level, the beast within you grows so powerful that you can spread its ferocity to others and gain resilience from them joining your hunt. When you enter your rage, you can choose a number of other willing creatures you can see within 30 feet of you equal to your Constitution modifier (minimum of one creature). You gain 5 temporary hit points for each creature that accepts this feature. Until the rage ends, the chosen creatures can use the following benefit once on each of their turns: when the creature hits a target with an attack roll and deals damage to it, the creature can roll a d6 and gain a bonus to the damage equal to the number rolled. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest."
-            }]
-          }
+            abilities: [
+              {
+                name: "Call the Hunt",
+                description:
+                  "At 14th level, the beast within you grows so powerful that you can spread its ferocity to others and gain resilience from them joining your hunt. When you enter your rage, you can choose a number of other willing creatures you can see within 30 feet of you equal to your Constitution modifier (minimum of one creature). You gain 5 temporary hit points for each creature that accepts this feature. Until the rage ends, the chosen creatures can use the following benefit once on each of their turns: when the creature hits a target with an attack roll and deals damage to it, the creature can roll a d6 and gain a bonus to the damage equal to the number rolled. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+                isPassive: true,
+              },
+            ],
+          },
         ],
       },
     ],
   },
+  {
+    name: "bard",
+    hitDice: "d8",
+    savingThrows: ["DEX", "CHA"],
+    weaponProficiencies: ["rapier", "longsword", "simple weapons"],
+    skillProficiences: ["any three"],
+    toolProficiences: ["musical instrument"],
+    levles: [
+      {
+        lvl: "1",
+        abilities: [{}],
+        spellSlots: [
+          {
+            lvl: "cantrips known",
+            slots: "2",
+          },
+          {
+            lvl: "1",
+            slots: "2",
+          },
+        ],
+        spellsKnown: "4",
+        classFeature: [
+          {
+            name: "Bardic Inspiration",
+            amount: "d6",
+          },
+        ],
+        prof: "2",
+      },
+      {
+        lvl: "2",
+        abilities: [
+          {
+            name: "Jack of All Trades",
+            description:
+              "Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus.",
+            isPassive: true,
+          },
+          {
+            name: "Song of Rest",
+            description:
+              "Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points. The extra Hit Points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level.",
+            isAction: true,
+          },
+        ],
+        spellSlots: [
+          {
+            lvl: "cantrips",
+            slots: "2",
+          },
+          {
+            lvl: "1",
+            slots: "3",
+          },
+        ],
+        spellsKnown: "5",
+        classFeature: [
+          {
+            name: "Bardic Inspiration",
+            amount: "d6",
+          },
+        ],
+        prof: "2",
+      },
+      {
+        lvl: "3",
+        abilities: [
+          {
+            name: "Expertise",
+            description:
+              "At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. At 10th level, you can choose another two skill proficiencies to gain this benefit.",
+            isPassive: true,
+          },
+        ],
+        spellSlots: [
+          {
+            lvl: "cantrips",
+            slots: "2",
+          },
+          {
+            lvl: "1",
+            slots: "4",
+          },
+          {
+            lvl: "2",
+            slots: "2",
+          },
+        ],
+        spellsKnown: "6",
+        classFeature: [
+          {
+            name: "Bardic Inspiration",
+            amount: "d6",
+          },
+        ],
+        prof: "2",
+      },
+    ],
+    subClasses: [],
+  },
 ];
+
 async function seedClasses() {
   try {
     const existingdndClasses = await Class.find({});
