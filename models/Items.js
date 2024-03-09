@@ -5,7 +5,7 @@ const itemSchema = new Schema({
     type: String,
     required: true,
   },
-  Properties: [String],
+  properties: [String],
   damage: {
     type: String,
   },

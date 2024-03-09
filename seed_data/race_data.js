@@ -282,7 +282,7 @@ const raceData = [
         lvl: "1",
         description:
           "Accustomed to twilit forests and the night sky, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can\u2019t discern color in darkness, only shades of gray.",
-        isPassive: ture,
+        isPassive: true,
       },
       {
         name: "Fey Ancestry",
@@ -449,7 +449,7 @@ async function seedRaces() {
         console.log(`${race.name} updated!`);
       }
     }
-  } catch (eer) {
+  } catch (err) {
     console.error("Error seeding races", err);
   }
 }
