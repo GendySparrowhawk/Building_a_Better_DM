@@ -658,6 +658,11 @@ const dndClassData = [
               "At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. At 10th level, you can choose another two skill proficiencies to gain this benefit.",
             isPassive: true,
           },
+          {
+            name: "Bard College",
+            description:
+              "At 3rd level, you delve into the advanced techniques of a bard college of your choice. Your choice grants you features at 3rd level and again at 6th and 14th level.",
+          },
         ],
         spellSlots: [
           {
@@ -682,6 +687,353 @@ const dndClassData = [
         ],
         prof: "2",
       },
+      {
+        lvl: "4",
+        abilities: [
+          {
+            name: "Ability Score Improvement",
+            description:
+              "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+          },
+          {
+            name: "Bardic Versatility (Optional)",
+            description:
+              "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, representing a change in focus as you use your skills and magic: Replace one of the skills you chose for the Expertise feature with one of your other skill proficiencies that isn't benefiting from Expertise. Replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the bard spell list.",
+            isPassive: true,
+          },
+        ],
+        spellSlots: [
+          {
+            lvl: "cantrips",
+            slots: "3",
+          },
+          {
+            lvl: "1",
+            slots: "4",
+          },
+          {
+            lvl: "2",
+            slots: "3",
+          },
+        ],
+        spellsKnown: "7",
+        classFeature: [
+          {
+            name: "Bardic Inspiration",
+            amount: "d6",
+          },
+        ],
+        prof: "2",
+      },
+      {
+        lvl: "5",
+        abilities: [
+          {
+            name: "Font of Inspiration",
+            description:
+              "Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.",
+          },
+        ],
+        spellSlots: [
+          {
+            lvl: "cantrips",
+            slots: "3",
+          },
+          {
+            lvl: "1",
+            slots: "4",
+          },
+          {
+            lvl: "2",
+            slots: "3",
+          },
+          {
+            lvl: "3",
+            slots: "2",
+          },
+        ],
+        spellsKnown: "8",
+        classFeature: [
+          {
+            name: "Bardic Inspiration",
+            amount: "d8",
+          },
+        ],
+        prof: "3",
+      },
+      {
+        lvl: "6",
+        abilities: [
+          {
+            name: "Countercharm",
+            description:
+              "At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed. A creature must be able to hear you to gain this benefit. The performance ends early if you are incapacitated or silenced or if you voluntarily end it (no action required).",
+          },
+        ],
+        spellSlots: [
+          {
+            lvl: "cantrips",
+            slots: "3",
+          },
+          {
+            lvl: "1",
+            slots: "4",
+          },
+          {
+            lvl: "2",
+            slots: "3",
+          },
+          {
+            lvl: "3",
+            slots: "3",
+          },
+        ],
+        spellsKnown: "9",
+        classFeature: [
+          {
+            name: "Bardic Inspiration",
+            amount: "d8",
+          },
+        ],
+        prof: "3",
+      },
+      {
+        lvl: "7",
+        abilities: [{}],
+        spellSlots: [
+          {
+            lvl: "cantrips",
+            slots: "3",
+          },
+          {
+            lvl: "1",
+            slots: "4",
+          },
+          {
+            lvl: "2",
+            slots: "3",
+          },
+          {
+            lvl: "3",
+            slots: "3",
+          },
+          {
+            lvl: "4",
+            slots: "1",
+          },
+        ],
+        spellsKnown: "10",
+        classFeature: [
+          {
+            name: "Bardic Inspiration",
+            amount: "d8",
+          },
+        ],
+        prof: "3",
+      },
+      {
+        lvl: "8",
+        abilities: [
+          {
+            name: "Ability Score Improvement",
+            description:
+              "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+          },
+          {
+            name: "Bardic Versatility (Optional)",
+            description:
+              "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, representing a change in focus as you use your skills and magic: Replace one of the skills you chose for the Expertise feature with one of your other skill proficiencies that isn't benefiting from Expertise. Replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the bard spell list.",
+            isPassive: true,
+          },
+        ],
+        spellSlots: [
+          {
+            lvl: "cantrips",
+            slots: "3",
+          },
+          {
+            lvl: "1",
+            slots: "4",
+          },
+          {
+            lvl: "2",
+            slots: "3",
+          },
+          {
+            lvl: "3",
+            slots: "3",
+          },
+          {
+            lvl: "4",
+            slots: "2",
+          },
+        ],
+        spellsKnown: "11",
+        classFeature: [
+          {
+            name: "Bardic Inspiration",
+            amount: "d8",
+          },
+        ],
+        prof: "3",
+      },
+      {
+        lvl: "9",
+        abilities: [
+          {
+            name: "Song of Rest",
+            description:
+              "Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points. The extra Hit Points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level.",
+            isAction: true,
+          },
+        ],
+        spellSlots: [
+          {
+            lvl: "cantrips",
+            slots: "3",
+          },
+          {
+            lvl: "1",
+            slots: "4",
+          },
+          {
+            lvl: "2",
+            slots: "3",
+          },
+          {
+            lvl: "3",
+            slots: "3",
+          },
+          {
+            lvl: "4",
+            slots: "3",
+          },
+          {
+            lvl: "5",
+            slots: "1",
+          },
+        ],
+        spellsKnown: "12",
+        classFeature: [
+          {
+            name: "Bardic Inspiration",
+            amount: "d8",
+          },
+        ],
+        prof: "4",
+      },
+      {
+        lvl: "10",
+        abilities: [
+          {
+            name: "Magical Secrets",
+            description:
+              "By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any classes, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table. You learn two additional spells from any classes at 14th level and again at 18th level.",
+          },
+          {
+            name: "Expertise",
+            description:
+              "At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. At 10th level, you can choose another two skill proficiencies to gain this benefit.",
+          },
+        ],
+        spellSlots: [
+          {
+            lvl: "cantrips",
+            slots: "4",
+          },
+          {
+            lvl: "1",
+            slots: "4",
+          },
+          {
+            lvl: "2",
+            slots: "3",
+          },
+          {
+            lvl: "3",
+            slots: "3",
+          },
+          {
+            lvl: "4",
+            slots: "3",
+          },
+          {
+            lvl: "5",
+            slots: "2",
+          },
+        ],
+        spellsKnown: "14",
+        classFeature: [
+          {
+            name: "Bardic Inspiration",
+            amount: "d10",
+          },
+        ],
+        prof: "4",
+      },
+      {
+        lvl: "11",
+        abilities: [{}],
+        spellSlots: [
+          {
+            lvl: "cantrips",
+            slots: "4",
+          },
+          {
+            lvl: "1",
+            slots: "4",
+          },
+          {
+            lvl: "2",
+            slots: "3",
+          },
+          {
+            lvl: "3",
+            slots: "3",
+          },
+          {
+            lvl: "4",
+            slots: "3",
+          },
+          {
+            lvl: "4",
+            slots: "3",
+          },
+          {
+            lvl: "5",
+            slots: "2",
+          },
+          {
+            lvl: "6",
+            slots: "1",
+          },
+        ],
+        spellsKnown: "15",
+        classFeature: [{
+          name: "Bardic Inspiration",
+          amount: "d10"
+        }],
+        prof: "4"
+      },
+      {
+        lvl: "12",
+        abilities: [{
+          name: "Ability Score Improvement",
+          description:
+            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+        },
+        {
+          name: "Bardic Versatility (Optional)",
+          description:
+            "Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, representing a change in focus as you use your skills and magic: Replace one of the skills you chose for the Expertise feature with one of your other skill proficiencies that isn't benefiting from Expertise. Replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the bard spell list.",
+          isPassive: true,
+        },],
+        spellSlots: [{
+          lvl: "cantrips",
+          slots: "4",
+          
+        }]
+      }
     ],
     subClasses: [],
   },
