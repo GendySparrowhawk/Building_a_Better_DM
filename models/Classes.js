@@ -22,14 +22,7 @@ const abilitySchema = new Schema({
     type: Boolean,
   },
 });
-// const spellLvlSchema = new Schema({
-// lvl: {
-//   type: String,
-// },
-// slots: {
-//   type: String
-// }
-// })
+
 const spellSlotSchema = new Schema({
  lvl: String,
  slots: String,
@@ -51,6 +44,7 @@ const classFeatureSchema = new Schema({
     },
   },
 });
+
 const subClassLevelSchema = new Schema({
   lvl: {
     type: String,

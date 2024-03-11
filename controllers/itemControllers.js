@@ -31,6 +31,23 @@ async function findOneItem(req, res) {
   }
 }
 
+// tested 3/11/24 works!
+async function findItemsbyRarity(req, res) {
+  try {
+    const rarity = req.params.rarity;
+    const items = await Item.find({rarity: rarity });
+
+    if(!items || items.length === 0) {
+      return res.status(404).json({error: "no items with that rarity"});
+    } else {
+      return res.status(200).json(items)
+    }
+  } catch (err) {
+    console.error("server error findign items", err);
+    res.status(500).json({ error: "no items found" });
+  }
+}
+
 // tested 3/9/24 a-okay
 async function findAllWeapons(req, res) {
   try {
@@ -65,22 +82,24 @@ async function findOneWeapon(req, res) {
   }
 }
 
-// tested 3/9/34 works!
-async function findAllArmor(req, res) {
+// tested 3/11/24 works!
+async function findWeaponByType(req, res) {
   try {
-    const armor = await Item.find({ isArmor: true });
+    const weaponType = req.params.type;
+    const weapons = await Item.find({ isWeapon: true, weaponType: weaponType });
 
-    if (!armor || armor.length === 0) {
-      return res.status(404).json({ error: "no armor found" });
+    if(!weapons || weapons.length ===0) {
+      return res.status(404).json({ error: 'no wepaons by that type found'});
     } else {
-      return res.status(200).json(armor);
+      return res.status(200).json(weapons)
     }
   } catch (err) {
-    console.error("server error getting armor's");
-    res.status(500).json({ error: "no armors found" });
+    console.error("server error getting weapons");
+    res.status(500).json({ error: "server error fetching wepaons by type" });
   }
 }
 
+// tested 3/9/34 works!
 async function findRangedWeapons(req, res) {
   try {
     const rangedWeapons = await Item.find({
@@ -99,11 +118,69 @@ async function findRangedWeapons(req, res) {
   }
 }
 
+
+// tested 3/9/34 works!
+async function findAllArmor(req, res) {
+  try {
+    const armor = await Item.find({ isArmor: true });
+
+    if (!armor || armor.length === 0) {
+      return res.status(404).json({ error: "no armor found" });
+    } else {
+      return res.status(200).json(armor);
+    }
+  } catch (err) {
+    console.error("server error getting armor's");
+    res.status(500).json({ error: "no armors found" });
+  }
+}
+
+// tested 3/11/24 works 
+async function findOneArmor(req, res) {
+  try {
+    const armorName = req.params.name;
+    const armor = await Item.find({ isArmor: true, name: armorName });
+
+    if(!armor) {
+      return res.status(404).json({error: "no armor by that name"})
+    } else {
+      return res.status(200).json(armor);
+    }
+  } catch (err) {
+    console.error("error finding armor", err);
+    res.status(500).json({ error: "no armor found by that name"})
+  }
+}
+
+// tested 3/11/24 works!
+async function findItemByProp(req, res) {
+  try {
+    const searchTerm = req.params.term;
+    if(!searchTerm) {
+     return res.status(400).json({ error: 'you must enter a search term'})
+    } 
+    const items = await Item.find({ properties: searchTerm });
+    
+    if(!items || items.length === 0) {
+      return res.status(404).json({ error: 'no items with that property found'})
+    } else {
+      return res.status(200).json(items)
+    }
+  } catch (err) {
+    console.error("error finding items", err);
+    res.status(500).json({ error: "server error fetching items"})
+  }
+}
+
 module.exports = {
   findAllItems,
   findOneItem,
   findAllWeapons,
   findOneWeapon,
+  findWeaponByType,
   findRangedWeapons,
   findAllArmor,
+  findOneArmor,
+  findItemByProp,
+  findItemsbyRarity,
 };
