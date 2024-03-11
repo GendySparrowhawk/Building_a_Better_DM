@@ -1095,7 +1095,8 @@ const spellData = [
     concentration: true,
     ritual: false,
     components: ["V"],
-    description: "Divine energy radiates from you, distorting and diffusing magical energy within 30 feet of you. Until the spell ends, the sphere moves with you, centered on you. For the duration, each friendly creature in the area (including you) has advantage on saving throws against spells and other magical effects. Additionally, when an affected creature succeeds on a saving throw made against a spell or magical effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throws."
+    description:
+      "Divine energy radiates from you, distorting and diffusing magical energy within 30 feet of you. Until the spell ends, the sphere moves with you, centered on you. For the duration, each friendly creature in the area (including you) has advantage on saving throws against spells and other magical effects. Additionally, when an affected creature succeeds on a saving throw made against a spell or magical effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throws.",
   },
   {
     name: "Clairvoyance",
@@ -1108,8 +1109,10 @@ const spellData = [
     concentration: true,
     ritual: false,
     components: ["V", "S", "M"],
-    materials: "a focus worth at least 100 gp, either a jeweled horn for hearing or a glass eye for seeing",
-    description: "You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The sensor remains in place for the duration, and it can't be attacked or otherwise interacted with. When you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing. A creature that can see the sensor (such as a creature benefiting from see invisibility or truesight) sees a luminous, intangible orb about the size of your fist." 
+    materials:
+      "a focus worth at least 100 gp, either a jeweled horn for hearing or a glass eye for seeing",
+    description:
+      "You create an invisible sensor within range in a location familiar to you (a place you have visited or seen before) or in an obvious location that is unfamiliar to you (such as behind a door, around a corner, or in a grove of trees). The sensor remains in place for the duration, and it can't be attacked or otherwise interacted with. When you cast the spell, you choose seeing or hearing. You can use the chosen sense through the sensor as if you were in its space. As your action, you can switch between seeing and hearing. A creature that can see the sensor (such as a creature benefiting from see invisibility or truesight) sees a luminous, intangible orb about the size of your fist.",
   },
   {
     name: "Clone",
@@ -1122,11 +1125,13 @@ const spellData = [
     concentration: false,
     ritual: false,
     components: ["V", "S", "M"],
-    materials: "a diamond worth at least 1,000 gp and at least 1 cubic inch of flesh of the creature that is to be cloned, which the spell consumes, and a vessel worth at least 2,000 gp that has a sealable lid and is large enough to hold the creature being cloned, such as a huge urn, coffin, mud- filled cyst in the ground, or crystal container filled with salt water",
-    description:  "This spell grows an inert duplicate of a living creature as a safeguard against death. This clone forms inside the vessel used in the spell\u2019s casting and grows to full size and maturity after 120 days; you can also choose to have the clone be a younger version of the same creature. It remains inert and endures indefinitely, as long as its vessel remains undisturbed. At any time after the clone matures, if the original creature dies, its soul transfers to the clone, provided that the soul is free and willing to return. The clone is physically identical to the original and has the same personality, memories, and abilities, but none of the original's equipment. The original creature's physical remains, if they still exist, become inert and can't thereafter be restored to life, since the creature's soul is elsewhere."
+    materials:
+      "a diamond worth at least 1,000 gp and at least 1 cubic inch of flesh of the creature that is to be cloned, which the spell consumes, and a vessel worth at least 2,000 gp that has a sealable lid and is large enough to hold the creature being cloned, such as a huge urn, coffin, mud- filled cyst in the ground, or crystal container filled with salt water",
+    description:
+      "This spell grows an inert duplicate of a living creature as a safeguard against death. This clone forms inside the vessel used in the spell\u2019s casting and grows to full size and maturity after 120 days; you can also choose to have the clone be a younger version of the same creature. It remains inert and endures indefinitely, as long as its vessel remains undisturbed. At any time after the clone matures, if the original creature dies, its soul transfers to the clone, provided that the soul is free and willing to return. The clone is physically identical to the original and has the same personality, memories, and abilities, but none of the original's equipment. The original creature's physical remains, if they still exist, become inert and can't thereafter be restored to life, since the creature's soul is elsewhere.",
   },
-{
-  name: "Cloud of Daggers",
+  {
+    name: "Cloud of Daggers",
     spellClass: ["Wizard", "Bard", "Sorcerer", "Warlock"],
     lvl: "2",
     school: "conjuration",
@@ -1137,26 +1142,133 @@ const spellData = [
     ritual: false,
     components: ["V", "S", "M"],
     materials: "A sliver of glass",
-    description: "You fill the air with spinning daggers in a cube 5 feet on each side, centered on a point you choose within range. A creature takes 4d4 slashing damage when it enters the spell\u2109s area for the first time on a turn or starts its turn there. At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 2d4 for each slot level above 2nd"
-},
-{
-  name: "Cloudkill",
-  spellClass: ["Wizard", "Alchemist", "Sorcerer", "Death Domain", "Oath of Conquest", "Warlock"],
-  lvl: "2",
-  school: "conjuration",
-  range: "60 ft 5ft cube",
-  castingTime: "1 action",
-  duration: "10 minutes",
-  concentration: true,
-  ritual: false,
-  saveThrow: "CON",
-  damageType: "Posion",
-  components: ["V", "S"],
-  description: "You create a 20-foot-radius sphere of poisonous, yellow-green fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. Its area is heavily obscured. When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature must make a Constitution saving throw. The creature takes 5d8 poison damage on a failed save, or half as much damage on a successful one. Creatures are affected even if they hold their breath or don't need to breathe. The fog moves 10 feet away from you at the start of each of your turns, rolling along the surface of the ground. The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings. At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
-},
-{
-  
-}
+    description:
+      "You fill the air with spinning daggers in a cube 5 feet on each side, centered on a point you choose within range. A creature takes 4d4 slashing damage when it enters the spell\u2109s area for the first time on a turn or starts its turn there. At Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 2d4 for each slot level above 2nd",
+  },
+  {
+    name: "Cloudkill",
+    spellClass: [
+      "Wizard",
+      "Alchemist",
+      "Sorcerer",
+      "Death Domain",
+      "Oath of Conquest",
+      "Warlock",
+    ],
+    lvl: "2",
+    school: "conjuration",
+    range: "120 ft 20ft sphere",
+    castingTime: "1 action",
+    duration: "10 minutes",
+    concentration: true,
+    ritual: false,
+    saveThrow: "CON",
+    damageType: "Posion",
+    components: ["V", "S"],
+    description:
+      "You create a 20-foot-radius sphere of poisonous, yellow-green fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. Its area is heavily obscured. When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature must make a Constitution saving throw. The creature takes 5d8 poison damage on a failed save, or half as much damage on a successful one. Creatures are affected even if they hold their breath or don't need to breathe. The fog moves 10 feet away from you at the start of each of your turns, rolling along the surface of the ground. The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings. At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.",
+  },
+  {
+    name: "Color Spray",
+    spellClass: ["Wizard", "Sorcerer"],
+    lvl: "1",
+    school: "Illusion",
+    range: "self 15ft cone",
+    castingTime: "1 action",
+    duration: "1 round",
+    concentration: false,
+    ritual: false,
+    components: ["V", "S", "M"],
+    materials:
+      "a pinch of powder or sand that is colored red, yellow, and blue",
+    description:
+      "A dazzling array of flashing, colored light springs from your hand. Roll 6d10; the total is how many hit points of creatures this spell can affect. Creatures in a 15-foot cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures and creatures that can\u2109t see). Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the end of your next turn. Subtract each creature\u2109s hit points from the total before moving on to the creature with the next lowest hit points. A creature\u2109s hit points must be equal to or less than the remaining total for that creature to be affected. At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st.",
+  },
+  {
+    name: "Command",
+    spellClass: [
+      "Cleric",
+      "Paladin",
+      "Warlock",
+      "Oath of the Crown",
+      "Oath of Conquest",
+    ],
+    lvl: "1",
+    school: "Enchantment",
+    range: "60 ft",
+    castingTime: "1 action",
+    duration: "1 round",
+    concentration: false,
+    ritual: false,
+    saveThrow: "WIS",
+    components: ["V"],
+    description:
+      "You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it. Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends. Approach. The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you. Drop. The target drops whatever it is holding and then ends its turn. Flee. The target spends its turn moving away from you by the fastest available means. Grovel. The target falls prone and then ends its turn. Halt. The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air. At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
+  },
+  {
+    name: "Commune",
+    spellClass: ["Cleric", "Paladin"],
+    lvl: "5",
+    school: "Divination",
+    range: "self",
+    castingTime: "1 minute",
+    duration: "1 minute",
+    concentration: false,
+    ritual: true,
+    components: ["V", "S", "M"],
+    materials: "incense and a vial of holy or unholy water",
+    description:
+      "You contact your deity or a divine proxy and ask up to three questions that can be answered with a yes or no. You must ask your questions before the spell ends. You receive a correct answer for each question. Divine beings aren't necessarily omniscient, so you might receive 'unclear' as an answer if a question pertains to information that lies beyond the deity's knowledge. In a case where a one-word answer could be misleading or contrary to the deity's interests, the GM might offer a short phrase as an answer instead. If you cast the spell two or more times before finishing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get no answer. The GM makes this roll in secret.",
+  },
+  {
+    name: "Commune with Nature",
+    spellClass: [
+      "Druid",
+      "Ranger",
+      "Oath of the Open Sea",
+      "Oath of the Ancients",
+    ],
+    lvl: "5",
+    school: "Divination",
+    range: "self",
+    castingTime: "1 minute",
+    duration: "Instantaneous",
+    concentration: false,
+    ritual: true,
+    components: ["V", "S"],
+    description:
+      "You briefly become one with nature and gain knowledge of the surrounding territory. In the outdoors, the spell gives you knowledge of the land within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn't function where nature has been replaced by construction, such as in dungeons and towns. You instantly gain knowledge of up to three facts of your choice about any of the following subjects as they relate to the area: terrain and bodies of water. Prevalent plants, minerals, animals, or peoples powerful celestials, fey, fiends, elementals, or undead. Influence from other planes of existence. Buildings. For example, you could determine the location of powerful undead in the area, the location of major sources of safe drinking water, and the location of any nearby towns.",
+  },
+  {
+    name: "Compelled Duel",
+    spellClass: ["Paladin"],
+    lvl: "1",
+    school: "enchantment",
+    range: "30ft",
+    castingTime: "1 minute",
+    duration: "Instantaneous",
+    concentration: true,
+    ritual: false,
+    saveThrow: "WIS",
+    components: ["V"],
+    description:
+      "You attempt to compel a creature into a duel. One creature that you can see within range must make a Wisdom saving throw. On a failed save, the creature is drawn to you, compelled by your divine demand. For the duration, it has disadvantage on attack rolls against creatures other than you, and must make a Wisdom saving throw each time it attempts to move to a space that is more than 30 feet away from you; if it succeeds on this saving throw, this spell doesn\u2109t restrict the target\u2109s movement for that turn. The spell ends if you attack any other creature, if you cast a spell that targets a hostile creature other than the target, if a creature friendly to you damages the target or casts a harmful spell on it, or if you end your turn more than 30 feet away from the target.",
+  },
+  {
+    name: "Comprehend Languages",
+    spellClass: ["Bard", "Sorcerer", "Warlock", "Wizard"],
+    lvl: "1",
+    school: "Divination",
+    range: "sef",
+    castingTime: "1 action",
+    duration: "1 hour",
+    concentration: fasle,
+    ritual: true,
+    components: ["V", "S", "M"],
+    materials: "a pinch of soot and salt",
+    description:
+      "For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.",
+  },
 ];
 
 async function seedSpells() {
