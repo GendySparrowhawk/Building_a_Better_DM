@@ -3,8 +3,10 @@ const Monster = require("../models/Monsters");
 const monsterData = [
   {
     name: "Aarakocra",
+    monsterCatagorey: ["Aarakocra"],
     img: "https://www.aidedd.org/dnd/images/aarakocra.jpg",
-    subClass: "medium, humanoid",
+    monsterType: "humanoid",
+    size: "medium",
     alignment: "neutral good",
     ac: "12",
     hp: "13",
@@ -31,7 +33,7 @@ const monsterData = [
       {
         name: "Search for the Seven Shards",
         description:
-          "The Wind Dukes of Aaqa come from a race of elemental beings called Vaati, which once ruled many worlds. A creature known as the Queen of Chaos arose and initiated an interplanar war against Vaati rule. To combat the threat seven Vaati heroes combined their powers to create the mighty Rod of Law. In battle against the queens greatest general, Miska the wolf-spier, a Vaati killed Miska by thrusting the rod into him like a spear. The rod shattered into seven shards that scattered throughout the multiverse. Aarakocra seek signs of the pieces’ locations in order to rebuild what is now know as the Rod of Seven Parts.",
+          "The Wind Dukes of Aaqa come from a race of elemental beings called Vaati, which once ruled many worlds. A creature known as the Queen of Chaos arose and initiated an interplanar war against Vaati rule. To combat the threat seven Vaati heroes combined their powers to create the mighty Rod of Law. In battle against the queens greatest general, Miska the wolf-spier, a Vaati killed Miska by thrusting the rod into him like a spear. The rod shattered into seven shards that scattered throughout the multiverse. Aarakocra seek signs of the pieces\u2019 locations in order to rebuild what is now know as the Rod of Seven Parts.",
       },
     ],
     actions: [

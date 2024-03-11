@@ -5,13 +5,17 @@ const monsterSchema = new Schema({
     type: String,
     required: true,
   },
+  monsterCatagorey: [String],
   img: {
     type: String,
     required: true,
   },
-  subClass: {
+  monsterType: {
     type: String,
     required: true
+  },
+  size: {
+    type: String,
   },
   alignment: {
     type: String,
