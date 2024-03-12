@@ -1269,6 +1269,52 @@ const spellData = [
     description:
       "For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.",
   },
+  {
+    name: "Compulsion",
+    spellClass:["Bard", "Order Domain", "Oath of Glory"],
+    lvl: "4",
+    school: "Enchantment",
+    range: "30ft",
+    castingTime: "1 action",
+    duration: "1 minute",
+    concentration: true,
+    ritual: false,
+    saveThrow: "WIS",
+    components: ["V", "S"],
+    description: "Creatures of your choice that you can see within range and that can hear you must make a Wisdom saving throw. A target automatically succeeds on this saving throw if it can't be charmed. On a failed save, a target is affected by this spell. Until the spell ends, you can use a bonus action on each of your turns to designate a direction that is horizontal to you. Each affected target must use as much of its movement as possible to move in that direction on its next turn. It can take its action before it moves. After moving in this way, it can make another Wisdom saving throw to try to end the effect. A target isn't compelled to move into an obviously deadly hazard, such as a fire or pit, but it will provoke opportunity attacks to move in the designated direction."
+  },
+  {
+    name: "cone of cold",
+    spellClass:["Sorcerer", "Wizard", "Hexblade", "Warlock"],
+    lvl: "5",
+    school: "Evocation",
+    range: "self 60ft cone",
+    castingTime: "1 action",
+    duration: "Instantaneous",
+    concentration: false,
+    ritual: false,
+    saveThrow: "CON",
+    damageType: "cold",
+    components: ["V", "S", "M"],
+    materials: "a small crystal or glass cone",
+    description: "A blast of cold air erupts from your hands. Each creature in a 60-foot cone must make a Constitution saving throw. A creature takes 8d8 cold damage on a failed save, or half as much damage on a successful one. A creature killed by this spell becomes a frozen statue until it thaws. At Higher Levels. When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th."
+  },
+  {
+    name: "Confusion",
+    spellClass:["Sorcerer", "Wizard", "Hexblade", "Warlock"],
+    lvl: "4",
+    school: "Enchantment",
+    range: "self 60ft cone",
+    castingTime: "1 action",
+    duration: "Instantaneous",
+    concentration: false,
+    ritual: false,
+    saveThrow: "CON",
+    damageType: "cold",
+    components: ["V", "S", "M"],
+    materials: "a small crystal or glass cone",
+    description:
+  }
 ];
 
 async function seedSpells() {
