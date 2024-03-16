@@ -12,32 +12,38 @@ const monsterData = [
     hp: "13",
     hitDice: "3d8",
     speed: "20ft, fly 50ft",
-    statBlock:[{
-      name: "STR",
-      score: "10",
-      modifier: "0"
-    },
-    {
-      name: "DEX",
-      score: "14",
-      modifier: "2"
-    },{
-      name: "CON",
-      score: "10",
-      modifier: "0"
-    },{
-      name: "INT",
-      score: "11",
-      modifier: "0"
-    },{
-      name: "WIS",
-      score: "12",
-      modifier: "1"
-    },{
-      name: "CHA",
-      score: "11",
-      modifier: "0"
-    }],
+    statBlock: [
+      {
+        name: "STR",
+        score: "10",
+        modifier: "0",
+      },
+      {
+        name: "DEX",
+        score: "14",
+        modifier: "2",
+      },
+      {
+        name: "CON",
+        score: "10",
+        modifier: "0",
+      },
+      {
+        name: "INT",
+        score: "11",
+        modifier: "0",
+      },
+      {
+        name: "WIS",
+        score: "12",
+        modifier: "1",
+      },
+      {
+        name: "CHA",
+        score: "11",
+        modifier: "0",
+      },
+    ],
     saveThrows: "",
     skills: "Perception +5",
     senses: "passive perception 15",
@@ -234,6 +240,157 @@ const monsterData = [
           "Water in the aboleth\u2019s lair magically becomes a conduit for the creature\u2019s rage. The aboleth can target any number of creatures it can see in such water within 90 feet of it. A target must succeed on a DC 14 Wisdom saving throw or take 7 (2d6) psychic damage. The aboleth can\u2019t use this lair action again until it has used a different one.",
       },
     ],
+  },
+  {
+    name: "Deva",
+    monsterCatagorey: "Angel",
+    img: "https://static.wikia.nocookie.net/criticalrole/images/0/02/Perigee_by_Nikki_Dawes.png/revision/latest?cb=20220923115256",
+    monsterType: "celestial",
+    size: "medium",
+    alignment: "lawful good",
+    ac: "17",
+    hp: "136",
+    hitDice: "16d8+64",
+    speed: "30ft fly 90ft",
+    statBlock: [
+      {
+        name: "STR",
+        score: "18",
+        modifier: "4",
+      },
+      {
+        name: "DEX",
+        score: "18",
+        modifier: "4",
+      },
+      {
+        name: "CON",
+        score: "18",
+        modifier: "4",
+      },
+      {
+        name: "INT",
+        score: "17",
+        modifier: "3",
+      },
+      {
+        name: "WIS",
+        score: "20",
+        modifier: "5",
+      },
+      {
+        name: "CHA",
+        score: "20",
+        modifier: "5",
+      },
+    ],
+    saveThrows: "WIS +9, CHA +9",
+    skills: "Insight +9, perception +9",
+    damageResistance: "radiant, bludgeoning, piercing, slashing",
+    senses: "darkvision 120ft, passive perception 19",
+    languages: "all, telepathy 120ft",
+    challenge: "10",
+    traits: [
+      {
+        name: "Angelic Weapons",
+        description:
+          "The Deva's weapons are magical. When the Deva hits with an attack, the weapon deals an additional 4d8 radiant damage",
+      },
+      {
+        name: "Shards of the Divine",
+        description:
+          "Angels are formed form the astral essence of benevolent gods and are thus divine beings of great power and foresight. Angles act out the will of their gods with tireless devotion.  Even chaotic good deities command lawful good angles, knowing that the angles dedication to order best allows them to follow divine commands. An angel follows a single driving purpose, as decreed by its deity. However, an angel is incapable of following commands that stray from the path of law and good. An Angel slays evil creatures without remorse. As the embodiment of law and good, an angle is almost never mistaken in its judgments. This quality can create a sense of superiority in the angel, a sense that comes to the fore when an angel\u2019s task conflicts with another creatures. The angel never acquiesces or gives way. When an angel is sent to aid mortals, it is sent not to serve but to command. The gods of good therefore send angels among mortals only in response to the most dire of circumstances. ",
+      },
+      {
+        name: "Fallen Angels ",
+        description:
+          "An angel\u2019s moral compass grants it a sense of infallibility that can sometimes spell its undoing. Angels are usually too wise to fall for a simple deception, but sometimes pride can lead one to commit an evil act. Whether intentional or accidental, such an act is a permanent stain that marks the angel as an outcast. Fallen Angels retain their power but lose their connection to the deities from which they were made. Most fallen angels take their banishment personally, rebelling against the powers they served by seeking rulership over a section of the Abyss or a place among other fallen hierarchy of the nine hells. Zariel, the ruler of the first layer of the nine hells, is such a creature. Rather than rebel, some rebel, some fallen angels resign themselves to an isolated existence on the material plane, living disguised as simple hermits. If they are redeemed, they can become powerful allies dedicated to justice and compassionate service. ",
+      },
+      {
+        name: "Immortal Nature",
+        description: "An angel does not require sleep, food or drink.",
+      },
+      {
+        name: "Magical Resistance",
+        description:
+          "the Deva has advantage on saving throws against spells and other magical effects.",
+      },
+    ],
+    actions: [
+      {
+        name: "Innate Spellcasting",
+        description:
+          "At will: detect evil and good, 1/day each: commune, raise dead",
+      },
+      {
+        name: "Multiattack",
+        description: "The deva makes two melee attacks",
+      },
+      {
+        name: "Healing Touch (3/Day)",
+        description:
+          "The deva touches another creature. The target magically regains 20 (4d8 + 2) hit points and is freed from any curse, disease, poison, blindness, or deafness.",
+      },
+      {
+        name: "Change Shape",
+        description:
+          "The deva magically polymorphs into a humanoid or beast that has a challenge rating equal to or less than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the deva's choice). In a new form, the deva retains its game statistics and ability to speak, but its AC, movement modes, Strength, Dexterity, and special senses are replaced by those of the new form, and it gains any statistics and capabilities (except class features, legendary actions, and lair actions) that the new form has but that it lacks.",
+      },
+    ],
+    attacks: [
+      {
+        name: "Mace",
+        toHit: "8",
+        damage: "1d6+4/4d8",
+        damageType: "bludgeoning/radiant",
+      },
+    ],
+  },
+  {
+    name: "Planetar",
+    monsterCatagorey: "Angel",
+    img: "https://cdnb.artstation.com/p/assets/images/images/050/208/361/large/lars2d_-70.jpg?1654295500",
+    monsterType: "celestial",
+    size: "large",
+    alignment: "lawful good",
+    ac: "19",
+    hp: "200",
+    hitDice: "16d10 + 112",
+    speed: "40ft, fly 120ft",
+    statBlock:[ {
+      name: "STR",
+      score: "24",
+      modifier: "7",
+    },
+    {
+      name: "DEX",
+      score: "20",
+      modifier: "5",
+    },
+    {
+      name: "CON",
+      score: "27",
+      modifier: "7",
+    },
+    {
+      name: "INT",
+      score: "19",
+      modifier: "4",
+    },
+    {
+      name: "WIS",
+      score: "22",
+      modifier: "6",
+    },
+    {
+      name: "CHA",
+      score: "25",
+      modifier: "7",
+    }],
+    saveThrows: "CON +12, WIS +11, CHA +12",
+    skills: "perception +11",
+    damageResistance: "radiant, bludgeoning, piercing, slashing",
+    senses: ""
   },
 ];
 

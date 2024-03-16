@@ -55,6 +55,12 @@ const monsterSchema = new Schema({
     type: String,
     required: true,
   },
+  damageResistance: {
+    type: String,
+  },
+  immunities: {
+    type: String,
+  }
   senses: {
     type: String,
     required: true,
