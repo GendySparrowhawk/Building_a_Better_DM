@@ -1,5 +1,17 @@
 const { Schema, model } = require("mongoose");
 
+const statsSchema = new Schema({
+  name: {
+    type: String,
+  },
+  score: {
+    type: String,
+  },
+  modifier: {
+    type: String,
+  },
+});
+
 const monsterSchema = new Schema({
   name: {
     type: String,
@@ -12,7 +24,7 @@ const monsterSchema = new Schema({
   },
   monsterType: {
     type: String,
-    required: true
+    required: true,
   },
   size: {
     type: String,
@@ -29,47 +41,13 @@ const monsterSchema = new Schema({
     type: String,
     required: true,
   },
+  hitDice: {
+    type: String,
+  },
   speed: {
     type: String,
   },
-statBlock: {
-  str: [
-    {
-      score: String,
-      modifier: String,
-    },
-  ],
-  dex: [
-    {
-      score: String,
-      modifier: String,
-    },
-  ],
-  con: [
-    {
-      score: String,
-      modifier: String,
-    },
-  ],
-  int: [
-    {
-      score: String,
-      modifier: String,
-    },
-  ],
-  wis: [
-    {
-      score: String,
-      modifier: String,
-    },
-  ],
-  cha: [
-    {
-      score: String,
-      modifier: String,
-    },
-  ],
-},
+  statBlock: [statsSchema],
   saveThrows: {
     type: String,
   },
@@ -107,6 +85,7 @@ statBlock: {
       name: String,
       toHit: String,
       damage: String,
+      damageType: String,
       description: String,
     },
   ],
