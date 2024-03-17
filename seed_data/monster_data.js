@@ -590,7 +590,261 @@ const monsterData = [
       },
     ],
   },
-  {},
+  {
+    name: "Animated Armor",
+    monsterCatagorey: "Animated Objects",
+    img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dndbeyond.com%2Fmonsters%2F16786-animated-armor&psig=AOvVaw0DArD2tLHTmZQD0VI39JpB&ust=1710793580863000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCOj7gO-Q_IQDFQAAAAAdAAAAABAJ",
+    monsterType: "construct",
+    size: "Medium",
+    alignment: "unaligned",
+    ac: "18",
+    hp: "33",
+    hitDice: "6d8 +6",
+    speed: "25ft",
+    statBlock: [
+      {
+        name: "STR",
+        score: "14",
+        modifier: "2",
+      },
+      {
+        name: "DEX",
+        score: "11",
+        modifier: "0",
+      },
+      {
+        name: "CON",
+        score: "13",
+        modifier: "1",
+      },
+      {
+        name: "INT",
+        score: "1",
+        modifier: "-5",
+      },
+      {
+        name: "WIS",
+        score: "3",
+        modifier: "-4",
+      },
+      {
+        name: "CHA",
+        score: "1",
+        modifier: "-5",
+      },
+    ],
+    saveThrows: "",
+    skills: "",
+    damageResistance:
+      "Blinded, Charmed, Deafened, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned",
+    immunities: "Poison, Psychic",
+    senses:
+      "Blindsight 60 ft. (blind beyond this radius), Passive Perception 6",
+    languages: "",
+    challenge: "1",
+    traits: [
+      {
+        name: "Constructed Nature",
+        description:
+          "An animated object doesn't require food, air, sleep, or drink. The magic that animates an object is dispelled when the construct drops to 0 hit points. An animated object that drops to 0 hit points becomes inanimate and is too damage to be of much use or value to anyone.",
+      },
+      {
+        name: "False Appearance",
+        description:
+          "While the armor remains motionless, it is indistinguishable from a normal suit of armor.",
+      },
+      {
+        name: "Antimagic Susceptibility",
+        description:
+          "The armor is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the armor must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.",
+      },
+    ],
+    actions: [
+      {
+        name: "Multiattack",
+        description: "The armor makes two melee attacks",
+      },
+    ],
+    attacks: [
+      {
+        name: "Slam",
+        toHit: "4",
+        damage: "1d6 +2",
+        damageType: "bludgeoning",
+      },
+    ],
+  },
+  {
+    name: "Flying Sword",
+    monsterCatagorey: ["Animated Object"],
+    img: "https://www.dndbeyond.com/avatars/thumbnails/30761/834/1000/1000/638061095632921781.png",
+    monsterType: "construct",
+    size: "small",
+    alignment: "unaligned",
+    ac: "17",
+    hp: "17",
+    hitDice: "5d6",
+    speed: "fly 50ft (hover)",
+    statBlock: [
+      {
+        name: "STR",
+        score: "12",
+        modifier: "1",
+      },
+      {
+        name: "DEX",
+        score: "15",
+        modifier: "2",
+      },
+      {
+        name: "CON",
+        score: "11",
+        modifier: "0",
+      },
+      {
+        name: "INT",
+        score: "1",
+        modifier: "-5",
+      },
+      {
+        name: "WIS",
+        score: "5",
+        modifier: "-3",
+      },
+      {
+        name: "CHA",
+        score: "1",
+        modifier: "-5",
+      },
+    ],
+    saveThrows: "",
+    skills: "",
+    damageResistance:
+      "Blinded, Charmed, Deafened, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned",
+    immunities: "Poison, Psychic",
+    senses:
+      "Blindsight 60 ft. (blind beyond this radius), Passive Perception 7",
+    languages: "",
+    challenge: "1/4",
+    traits: [
+      {
+        name: "Constructed Nature",
+        description:
+          "An animated object doesn't require food, air, sleep, or drink. The magic that animates an object is dispelled when the construct drops to 0 hit points. An animated object that drops to 0 hit points becomes inanimate and is too damage to be of much use or value to anyone.",
+      },
+      {
+        name: "False Appearance",
+        description:
+          "While the armor remains motionless, it is indistinguishable from a normal suit of armor.",
+      },
+      {
+        name: "Antimagic Susceptibility",
+        description:
+          "The armor is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the armor must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.",
+      },
+    ],
+    actions: [{}],
+    attacks: [{
+      name: "Longsword",
+      toHit: "3",
+      damage: "1d8 +1",
+      damageType: "slashing"
+    }]
+  },
+  {
+    name: "Rug of Smothering",
+    monsterCatagorey: ["Animated Object"],
+    img: "https://www.dndbeyond.com/avatars/thumbnails/30761/845/1000/1000/638061095923531915.png",
+    monsterType: "construct",
+    size: "large",
+    alignment: "unaligned",
+    ac: "12",
+    hp: "33",
+    hitDice: "6d10",
+    speed: "10ft",
+    statBlock: [
+      {
+        name: "STR",
+        score: "17",
+        modifier: "3",
+      },
+      {
+        name: "DEX",
+        score: "14",
+        modifier: "2",
+      },
+      {
+        name: "CON",
+        score: "11",
+        modifier: "0",
+      },
+      {
+        name: "INT",
+        score: "1",
+        modifier: "-5",
+      },
+      {
+        name: "WIS",
+        score: "3",
+        modifier: "-4",
+      },
+      {
+        name: "CHA",
+        score: "1",
+        modifier: "-5",
+      },
+    ],
+    saveThrows: "",
+    skills: "",
+    damageResistance:
+      "Blinded, Charmed, Deafened, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned",
+    immunities: "Poison, Psychic",
+    senses:
+      "Blindsight 60 ft. (blind beyond this radius), Passive Perception 7",
+    languages: "",
+    challenge: "2",
+    traits: [
+      {
+        name: "Constructed Nature",
+        description:
+          "An animated object doesn't require food, air, sleep, or drink. The magic that animates an object is dispelled when the construct drops to 0 hit points. An animated object that drops to 0 hit points becomes inanimate and is too damage to be of much use or value to anyone.",
+      },
+      {
+        name: "False Appearance",
+        description:
+          "While the armor remains motionless, it is indistinguishable from a normal suit of armor.",
+      },
+      {
+        name: "Antimagic Susceptibility",
+        description:
+          "The armor is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the armor must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.",
+      },
+      {
+        name: "Damage Transfer",
+        description: "While it is grappling a creature, the rug takes only half the damage dealt to it, and the creature grappled by the rug takes the other half."
+      }
+    ],
+    attacks:[{
+      name: "Smother",
+      toHit: "5",
+      damage: "2d6+3",
+      damageType: "bludgeoning",
+      description: " The creature is grappled (escape DC 13). Until this grapple ends, the target is restrained, blinded, and at risk of suffocating, and the rug can't smother another target. In addition, at the start of each of the target's turns, the target takes 10 (2d6 + 3) bludgeoning damage."
+    }]
+  },
+  {
+    name: "Ankheg",
+    monsterCatagorey: "Ankheg",
+    img: "https://www.dndbeyond.com/avatars/thumbnails/30761/865/1000/1000/638061096692582271.png",
+    monsterType: "Monstrosity",
+    size: "large",
+    alignment: "unaligned",
+    ac: "14/11 while prone",
+    hp: "39",
+    hitDice: "6d10 + 6",
+    speed: "30ft, burrow 10ft",
+    statBlock: 
+  }
 ];
 
 async function seedMonsters() {
