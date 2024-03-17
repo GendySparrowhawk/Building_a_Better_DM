@@ -60,7 +60,7 @@ const monsterSchema = new Schema({
   },
   immunities: {
     type: String,
-  }
+  },
   senses: {
     type: String,
     required: true,

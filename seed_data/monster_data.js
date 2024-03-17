@@ -287,6 +287,7 @@ const monsterData = [
     saveThrows: "WIS +9, CHA +9",
     skills: "Insight +9, perception +9",
     damageResistance: "radiant, bludgeoning, piercing, slashing",
+    immunities: "Charmed, Exhaustion, Frightened",
     senses: "darkvision 120ft, passive perception 19",
     languages: "all, telepathy 120ft",
     challenge: "10",
@@ -357,41 +358,239 @@ const monsterData = [
     hp: "200",
     hitDice: "16d10 + 112",
     speed: "40ft, fly 120ft",
-    statBlock:[ {
-      name: "STR",
-      score: "24",
-      modifier: "7",
-    },
-    {
-      name: "DEX",
-      score: "20",
-      modifier: "5",
-    },
-    {
-      name: "CON",
-      score: "27",
-      modifier: "7",
-    },
-    {
-      name: "INT",
-      score: "19",
-      modifier: "4",
-    },
-    {
-      name: "WIS",
-      score: "22",
-      modifier: "6",
-    },
-    {
-      name: "CHA",
-      score: "25",
-      modifier: "7",
-    }],
+    statBlock: [
+      {
+        name: "STR",
+        score: "24",
+        modifier: "7",
+      },
+      {
+        name: "DEX",
+        score: "20",
+        modifier: "5",
+      },
+      {
+        name: "CON",
+        score: "27",
+        modifier: "7",
+      },
+      {
+        name: "INT",
+        score: "19",
+        modifier: "4",
+      },
+      {
+        name: "WIS",
+        score: "22",
+        modifier: "6",
+      },
+      {
+        name: "CHA",
+        score: "25",
+        modifier: "7",
+      },
+    ],
     saveThrows: "CON +12, WIS +11, CHA +12",
     skills: "perception +11",
     damageResistance: "radiant, bludgeoning, piercing, slashing",
-    senses: ""
+    immunities: "Charmed, Exhaustion, Frightened",
+    senses: "Truesight 120 ft, Passive Perception 21",
+    languages: "All, telepathy 120 ft",
+    challenge: "16",
+    traits: [
+      {
+        name: "Angelic Weapons",
+        description:
+          "The Deva's weapons are magical. When the Deva hits with an attack, the weapon deals an additional 4d8 radiant damage",
+      },
+      {
+        name: "Shards of the Divine",
+        description:
+          "Angels are formed form the astral essence of benevolent gods and are thus divine beings of great power and foresight. Angles act out the will of their gods with tireless devotion.  Even chaotic good deities command lawful good angles, knowing that the angles dedication to order best allows them to follow divine commands. An angel follows a single driving purpose, as decreed by its deity. However, an angel is incapable of following commands that stray from the path of law and good. An Angel slays evil creatures without remorse. As the embodiment of law and good, an angle is almost never mistaken in its judgments. This quality can create a sense of superiority in the angel, a sense that comes to the fore when an angel\u2019s task conflicts with another creatures. The angel never acquiesces or gives way. When an angel is sent to aid mortals, it is sent not to serve but to command. The gods of good therefore send angels among mortals only in response to the most dire of circumstances. ",
+      },
+      {
+        name: "Fallen Angels ",
+        description:
+          "An angel\u2019s moral compass grants it a sense of infallibility that can sometimes spell its undoing. Angels are usually too wise to fall for a simple deception, but sometimes pride can lead one to commit an evil act. Whether intentional or accidental, such an act is a permanent stain that marks the angel as an outcast. Fallen Angels retain their power but lose their connection to the deities from which they were made. Most fallen angels take their banishment personally, rebelling against the powers they served by seeking rulership over a section of the Abyss or a place among other fallen hierarchy of the nine hells. Zariel, the ruler of the first layer of the nine hells, is such a creature. Rather than rebel, some rebel, some fallen angels resign themselves to an isolated existence on the material plane, living disguised as simple hermits. If they are redeemed, they can become powerful allies dedicated to justice and compassionate service. ",
+      },
+      {
+        name: "Immortal Nature",
+        description: "An angel does not require sleep, food or drink.",
+      },
+      {
+        name: "Magical Resistance",
+        description:
+          "the Planetar has advantage on saving throws against spells and other magical effects.",
+      },
+    ],
+    actions: [
+      {
+        name: "Innate Spellcasting",
+        description:
+          "At will: detect evil and good, 3/day each: blade barrier, dispel good and evil, flame strike, raise dead. 1/day commune, control weather, insect plauge dc20",
+      },
+      {
+        name: "Multiattack",
+        description: "The deva makes two melee attacks",
+      },
+      {
+        name: "Healing Touch (4/Day)",
+        description:
+          "The deva touches another creature. The target magically regains 30 (6d8 + 2) hit points and is freed from any curse, disease, poison, blindness, or deafness.",
+      },
+    ],
+    actions: [
+      {
+        name: "Multiattack",
+        description: "The planetar makes two melee attacks",
+      },
+    ],
+    attacks: [
+      {
+        name: "Greatsword",
+        toHit: "12",
+        damage: "4d6 + 7 / +5d8",
+        damageType: "slashing/radiant",
+      },
+    ],
   },
+  {
+    name: "Solar",
+    monsterCatagorey: "Angel",
+    img: "https://i.pinimg.com/originals/59/aa/86/59aa8644d0939ca325006a6ee989053d.jpg",
+    monsterType: "Celestial",
+    size: "large",
+    alignment: "Lawful Good",
+    ac: "21",
+    hp: "243",
+    hitDice: "18d10 + 144",
+    speed: "50ft, fly 150ft",
+    statBlock: [
+      {
+        name: "STR",
+        score: "26",
+        modifier: "8",
+      },
+      {
+        name: "DEX",
+        score: "22",
+        modifier: "6",
+      },
+      {
+        name: "CON",
+        score: "26",
+        modifier: "8",
+      },
+      {
+        name: "INT",
+        score: "25",
+        modifier: "7",
+      },
+      {
+        name: "WIS",
+        score: "25",
+        modifier: "7",
+      },
+      {
+        name: "CHA",
+        score: "30",
+        modifier: "10",
+      },
+    ],
+    saveThrows: "INT +14, WIS +14, CHA +17",
+    skills: "Perception +14",
+    damageResistance:
+      "Radiant, Bludgeoning, Piercing, and Slashing from Nonmagical Attacks",
+    immunities: " Necrotic, Poison, Charmed, Exhaustion, Frightened, Poisoned",
+    senses: "Truesight 120 ft., Passive Perception 24",
+    languages: "All, Telepathy 120 ft",
+    challenge: "21",
+    traits: [
+      {
+        name: "Angelic Weapons",
+        description:
+          "The Deva's weapons are magical. When the Deva hits with an attack, the weapon deals an additional 6d8 radiant damage",
+      },
+      {
+        name: "Shards of the Divine",
+        description:
+          "Angels are formed form the astral essence of benevolent gods and are thus divine beings of great power and foresight. Angles act out the will of their gods with tireless devotion.  Even chaotic good deities command lawful good angles, knowing that the angles dedication to order best allows them to follow divine commands. An angel follows a single driving purpose, as decreed by its deity. However, an angel is incapable of following commands that stray from the path of law and good. An Angel slays evil creatures without remorse. As the embodiment of law and good, an angle is almost never mistaken in its judgments. This quality can create a sense of superiority in the angel, a sense that comes to the fore when an angel\u2019s task conflicts with another creatures. The angel never acquiesces or gives way. When an angel is sent to aid mortals, it is sent not to serve but to command. The gods of good therefore send angels among mortals only in response to the most dire of circumstances. ",
+      },
+      {
+        name: "Fallen Angels ",
+        description:
+          "An angel\u2019s moral compass grants it a sense of infallibility that can sometimes spell its undoing. Angels are usually too wise to fall for a simple deception, but sometimes pride can lead one to commit an evil act. Whether intentional or accidental, such an act is a permanent stain that marks the angel as an outcast. Fallen Angels retain their power but lose their connection to the deities from which they were made. Most fallen angels take their banishment personally, rebelling against the powers they served by seeking rulership over a section of the Abyss or a place among other fallen hierarchy of the nine hells. Zariel, the ruler of the first layer of the nine hells, is such a creature. Rather than rebel, some rebel, some fallen angels resign themselves to an isolated existence on the material plane, living disguised as simple hermits. If they are redeemed, they can become powerful allies dedicated to justice and compassionate service. ",
+      },
+      {
+        name: "Immortal Nature",
+        description: "An angel does not require sleep, food or drink.",
+      },
+      {
+        name: "Magical Resistance",
+        description:
+          "the Planetar has advantage on saving throws against spells and other magical effects.",
+      },
+      {
+        name: "Divine Awareness",
+        description: "The Solar knows if it hears a lie.",
+      },
+      {
+        name: "Innate Spellcasting",
+        description:
+          "The solar's spellcasting ability is Charisma (spell save DC 25). It can innately cast the following spells, requiring no material components: At will: detect evil and good, invisibility (self only) 3/day each: blade barrier, dispel evil and good, resurrection 1/day each: commune, control weather",
+      },
+    ],
+    actions: [
+      {
+        name: "Multiattack",
+        description: "The solar makes two greatsword attacks.",
+      },
+      {
+        name: "Flying Sword",
+        description:
+          "The solar releases its greatsword to hover magically in an unoccupied space within 5 feet of it. If the solar can see the sword, the solar can mentally command it as a bonus action to fly up to 50 feet and either make one attack against a target or return to the solar's hands. If the hovering sword is targeted by any effect, the solar is considered to be holding it. The hovering sword falls if the solar dies.",
+      },
+      {
+        name: "Healing Touch (4/Day)",
+        description:
+          "The solar touches another creature. The target magically regains 40 (8d8 + 4) hit points and is freed from any curse, disease, poison, blindness, or deafness.",
+      },
+    ],
+    attacks: [
+      {
+        name: "Greatsword",
+        toHit: "15",
+        damage: "4d6 + 8/ 6d8",
+        damageType: "slashing/radiant",
+      },
+      {
+        name: "Slaying Longbow",
+        toHit: "13",
+        damage: "2d8 + 6/ + 6d8",
+        damageType: "piercing/radiant",
+        description:
+          "If the target is a creature that has 100 hit points or fewer, it must succeed on a DC 15 Constitution saving throw or die.",
+      },
+    ],
+    legendaryActions: [
+      {
+        name: "Teleport",
+        description:
+          "The solar magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.",
+      },
+      {
+        name: "Searing Burst (Costs 2 Actions)",
+        description:
+          "The solar emits magical, divine energy. Each creature of its choice in a 10-foot radius must make a DC 23 Dexterity saving throw, taking 14 (4d6) fire damage plus 14 (4d6) radiant damage on a failed save, or half as much damage on a successful one.",
+      },
+      {
+        name: "Blinding Gaze (Costs 3 Actions)",
+        description:
+          "The solar targets one creature it can see within 30 feet of it. If the target can see it, the target must succeed on a DC 15 Constitution saving throw or be blinded until magic such as the lesser restoration spell removes the blindness.",
+      },
+    ],
+  },
+  {},
 ];
 
 async function seedMonsters() {
